@@ -1,0 +1,279 @@
+<!-- ?xml version='1.0' encoding='UTF-8'? -->
+<link href="/github-markdown-css/github-css.css" rel="stylesheet"/>
+<meta charset="utf-8" content="text/html"/>
+<div class="gist">
+<style class="formula-style">
+        svg.gh-md-to-html-formula {
+            fill: black;
+        }
+    </style>
+<div class="gist-file"> <!-- This is the class that is responsible for the boxing! -->
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file" id="user-content-article-ps02_cytoscape_advanced">
+<div class="Box-body readme blob js-code-block-container p-5 p-xl-6" id="user-content-file-docker-image-pull-md-readme" style="margin-left: 40px; margin-right: 40px; margin-top: 20px; margin-bottom: 20px">
+<article class="markdown-body entry-content container-lg" itemprop="text">
+<h1 id="user-content-practice-session-02-cytoscape-advanced">
+<a aria-hidden="true" class="anchor" href="#user-content-practice-session-02-cytoscape-advanced" id="user-content-practice-session-02-cytoscape-advanced" name="user-content-practice-session-02-cytoscape-advanced"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practice Session 02: Cytoscape advanced</h1>
+<h2 id="user-content-contents">
+<a aria-hidden="true" class="anchor" href="#user-content-contents" id="user-content-contents" name="user-content-contents"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contents</h2>
+<ol>
+<li>Working with a large network</li>
+<li>Creating sub-networks</li>
+<li>Adding attributes to an existing network</li>
+<li>Creating a network on CSV files</li>
+</ol>
+<h3 id="user-content-datasets-for-this-session">
+<a aria-hidden="true" class="anchor" href="#user-content-datasets-for-this-session" id="user-content-datasets-for-this-session" name="user-content-datasets-for-this-session"><span aria-hidden="true" class="octicon octicon-link"></span></a>Datasets for this session</h3>
+<ul>
+<li>Marvel Universe Social Graph <a href="datasets/hero-network.csv">hero-network.csv</a>
+</li>
+<li>Game of Thrones Characters <a href="datasets/got-characters.csv">got-characters.csv</a> and <a href="datasets/got-relationships.csv">got-relationships.csv</a>
+</li>
+</ul>
+<h1 id="user-content-1-working-with-a-large-network">
+<a aria-hidden="true" class="anchor" href="#user-content-1-working-with-a-large-network" id="user-content-1-working-with-a-large-network" name="user-content-1-working-with-a-large-network"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. Working with a large network</h1>
+<p>The Marvel Universe Social Graph contains characters from the Marvel Universe that appear in the same comic number. It contains over half a million edges. It is formatted in the following way:</p>
+<pre><code>BLACK PANTHER/T'CHAL&lt;tab&gt;HAWK
+BLACK PANTHER/T'CHAL&lt;tab&gt;LOKI [ASGARDIAN]
+BLACK PANTHER/T'CHAL&lt;tab&gt;HULK/DR. ROBERT BRUC
+SPIDER-MAN/PETER PAR&lt;tab&gt;HULK/DR. ROBERT BRUC
+...
+</code></pre>
+<p>To import Marvel Universe SG into Cytoscape:</p>
+<ul>
+<li><code>File &gt; Import &gt; Network from File ...</code></li>
+<li>Select <code>hero-network.csv</code>
+</li>
+<li>
+<code>Advanced Options ...</code>: indicate the delimiter is only a tabulator (<strong>TAB</strong>).
+<ul>
+<li>⚠️ If you keep the default delimiter, a comma, or you use tabulator and comma, you will mistakenly get too many nodes (as node names include commas inside) and Cytoscape may hang for a long time or crash.</li>
+</ul>
+</li>
+<li>As a result, Column 1 should be "Source" (green disc) and Column 2 should be "Target" (red target)</li>
+<li>Press <code>OK</code> to calcule the view</li>
+</ul>
+<p>Tip: change the style to "Minimal" to see the graph (slightly) better.</p>
+<p>[<strong>REPORT</strong>] Include this graph in your report.</p>
+<p>[<strong>REPORT</strong>] Answer the following question: what are the small components that are disconnected from the largest connected component?</p>
+<h1 id="user-content-2-creating-sub-networks">
+<a aria-hidden="true" class="anchor" href="#user-content-2-creating-sub-networks" id="user-content-2-creating-sub-networks" name="user-content-2-creating-sub-networks"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Creating sub-networks</h1>
+<ul>
+<li>Search for the node named "BLACK PANTHER/T'CHAL"
+<ul>
+<li>Option 1: use the search box is on top of the display.
+<ul>
+<li>⚠️ Depending on the OS (usually in Linux-based systems) you may need to add \ in order to exclude special characters (+ - &amp; | ! ( ) { } [ ] ^ " ~ * ? : ). Also, spaces and quotes are not well managed. Use * as a wildcard.</li>
+</ul>
+</li>
+<li>Option 2: find this node in the node table, select it, and then use the secondary button to indicate <code>Select nodes from selected rows</code>
+</li>
+</ul>
+</li>
+<li>Select the neighbors of a character: select the caracter and click on the <code>two-house icon on the top bar</code>. Note that edges among neighbors are also shown.</li>
+<li>Create a subnetwork with the selected nodes: <code>File &gt; New Network &gt; From selected nodes, all edges</code>
+</li>
+<li>Rename the new network as "BLACK".</li>
+</ul>
+<p>[<strong>REPORT</strong>] Indicate the number of nodes and edges of this sub-graph (they are shown in the Network Panel).</p>
+<ul>
+<li>Do the same for a less popular character "ENCHANTRESS/AMORA/HE": select this node and its neighbors, create a subnetwork, and rename it as "ENCHANTRESS".
+Note that the number of nodes is much smaller but the number of edges is not proportionally as small. Think of why do this happens?</li>
+</ul>
+<p>[<strong>REPORT</strong>] Indicate the number of nodes and edges in the sub-graph of nodes connected to "ENCHANTRESS".</p>
+<p>You can also make selections by other characteristics, such as degree by creating a filter in the Filter Panel.</p>
+<p>[<strong>REPORT</strong>] Include a brief commentary on the number of nodes and edges in different sub-graphs from different characters. What do you think influences these numbers?</p>
+<p>⚠️ <strong>Important</strong>: by default Cytoscape has a <a href="http://manual.cytoscape.org/en/stable/Rendering_Engine.html#what-is-level-of-detail-lod" rel="nofollow">level of detail</a> setting that is similar to the one found in videogames. If the current view contains more than <em>render.nodeLabelThreshold</em>, the node labels are not displayed. You can toggle between full details and reduced details using "View &gt; Show Graphics Details" and "View &gt; Hide Graphics Details." You can also permanently adjust this by going to "Edit &gt; Preferences". Depending on the computer, you can set this up to 2000 from the default of 200. Be careful: this will block your computer when dealing with large networks such as the hero network.</p>
+<h1 id="user-content-2-adding-attributes-to-an-existing-network">
+<a aria-hidden="true" class="anchor" href="#user-content-2-adding-attributes-to-an-existing-network" id="user-content-2-adding-attributes-to-an-existing-network" name="user-content-2-adding-attributes-to-an-existing-network"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Adding attributes to an existing network</h1>
+<p>When working with CSV files, the node attibutes have to be supplied in a separated file from the edges file. Following, we will create a network from two CSV files: <code>got-characters.csv</code> contains the name and house of the characters in the series <em>Game of Thrones</em> (let's name it, <em>attribute file</em>) and <code>got-relationships.csv</code> contains relationships between characters (let's name it, <em>network file</em>).</p>
+<p>First, import the edges:</p>
+<ul>
+<li><code>File &gt; Import &gt; Network from file ...</code></li>
+<li>Use the file <code>got-relationships.csv</code>
+</li>
+<li>Select for <code>src</code> column: "Source Node" (green disc)</li>
+<li>Select for <code>dest</code> column: "Target Node" (red target)</li>
+<li>Select "Edge Attribute" for the other columns</li>
+</ul>
+<p>As a result, source and target nodes are assigned to the node table. Have a look at both node and edge tables.</p>
+<p>Then, import the node attributes to be added:</p>
+<ul>
+<li>Select the node table; we are going to add new attributes as columns.</li>
+<li><code>File &gt; Import &gt; Table from file ...</code></li>
+<li>Use the file <code>got-characters.csv</code>
+</li>
+<li>Import data "To selected networks only" and select "got-relationships.csv"</li>
+<li>Import data as "Node Table Columns"</li>
+<li>The first column ("Id") should be the key</li>
+<li>The other columns should be attributes</li>
+</ul>
+<p>Check the changes in the node table.</p>
+<p>Now, style the network:</p>
+<ul>
+<li>Use the <em>character-name</em> of the character as the node label.</li>
+<li>Use the <em>degree</em> as the size of the node (you will need to run the network analysis first with <code>Tools &gt; Analyze Network</code>)</li>
+<li>Use the <em>house-birth</em> attribute to determine the shape and color of nodes. Use style, shape, fill-color, and discrete mappings.</li>
+<li>Use the <em>relationship</em> attribute to label edges. Leave edges in color black, except for edges representing killing, which should be in red.</li>
+</ul>
+<p>[<strong>REPORT</strong>] Include the graph of <em>Game of Thrones</em>.</p>
+<p>[<strong>REPORT</strong>] Show one example of a multi-edge in this graph. Indicate which characters are involved.</p>
+<p>[<strong>REPORT</strong>] Show one example of a loop in this graph. Indicate which characters are involved.</p>
+<p>[<strong>REPORT</strong>] Indicate a brief commentary on any interesting phenomenon you observe on this graph.</p>
+<h1 id="user-content-3-creating-a-network-on-csv-files">
+<a aria-hidden="true" class="anchor" href="#user-content-3-creating-a-network-on-csv-files" id="user-content-3-creating-a-network-on-csv-files" name="user-content-3-creating-a-network-on-csv-files"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Creating a network on CSV files</h1>
+<p>Now, create a network on your own, on whatever topic of your choice as long as the network is <strong>real</strong>. As indicated above, you will need two CSV files: one for the network and one for the attributes. The network should include between 15 and 30 nodes.</p>
+<p>Some ideas:</p>
+<ul>
+<li>Nodes can be characters in a movie, edges connecting characters depending on their affinity.</li>
+<li>Nodes can be music bands or artists, attributes whether the node is a band or an artist, edges connect artists to the bands they've played in.</li>
+<li>Nodes can be countries, attributes can be population sizes, connections can be countries that share a border.</li>
+<li>Note that edges can also have attributes, which you can use to change the color or style of lines in the graph.</li>
+</ul>
+<p>These are only ideas. Be creative.</p>
+<p>Tip: to include a legend, you can use the Cytoscape app <a href="https://apps.cytoscape.org/apps/legendcreator" rel="nofollow">legend creator</a>.</p>
+<p>[<strong>REPORT</strong>] Describe the graph you created.</p>
+<p>[<strong>REPORT</strong>] Include two tables with the contents of the CSV files you created (not screenshots).</p>
+<p>[<strong>REPORT</strong>] Draw the graph in Cytoscape and include it in your report.</p>
+<h1 id="user-content-deliver-individually">
+<a aria-hidden="true" class="anchor" href="#user-content-deliver-individually" id="user-content-deliver-individually" name="user-content-deliver-individually"><span aria-hidden="true" class="octicon octicon-link"></span></a>DELIVER (INDIVIDUALLY)</h1>
+<p>Deliver a report describing these networks, having at most 4 pages in PDF. The report should have <strong>three numbered sections</strong>: one for the <em>Marvel</em> network, one for <em>Game of Thrones</em>, and one for the network you created. Remember to include all of the elements marked [<strong>REPORT</strong>] above.</p>
+<p><strong>Note</strong>: If you find any mistake in the Game of Thrones graph, e.g., something wrong with respect to the TV series, please send us the corrected CSV files.</p>
+<p>Your report should end with the following text:</p>
+<p><strong>I hereby declare that all of the text, tables, and figures in this report were produced by myself.</strong></p>
+<hr/>
+<hr/>
+<hr/>
+<h1 id="user-content-practice-session-02-cytoscape-advanced-1">
+<a aria-hidden="true" class="anchor" href="#user-content-practice-session-02-cytoscape-advanced-1" id="user-content-practice-session-02-cytoscape-advanced-1" name="user-content-practice-session-02-cytoscape-advanced-1"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practice Session 02: Cytoscape Advanced</h1>
+<h2 id="user-content-materials-for-this-session">
+<a aria-hidden="true" class="anchor" href="#user-content-materials-for-this-session" id="user-content-materials-for-this-session" name="user-content-materials-for-this-session"><span aria-hidden="true" class="octicon octicon-link"></span></a>Materials for this Session</h2>
+<p>(See <a href="data/README.md">how to download</a> in the README of the data/ directory)</p>
+<ul>
+<li>Marvel Universe Social Graph: <a href="data/hero-network.csv">hero-network.csv</a>
+</li>
+<li>Game of Thrones Characters: <a href="data/got-characters.csv">got-characters.csv</a> and <a href="data/got-relationships.csv">got-relationships.csv</a>
+</li>
+</ul>
+<h2 id="user-content-contents-1">
+<a aria-hidden="true" class="anchor" href="#user-content-contents-1" id="user-content-contents-1" name="user-content-contents-1"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contents</h2>
+<ol>
+<li>Importing networks</li>
+<li>Creating networks</li>
+<li>Editing networks</li>
+</ol>
+<h1 id="user-content-1-working-with-a-large-network-1">
+<a aria-hidden="true" class="anchor" href="#user-content-1-working-with-a-large-network-1" id="user-content-1-working-with-a-large-network-1" name="user-content-1-working-with-a-large-network-1"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. Working with a large network</h1>
+<p>The Marvel Universe Social Graph contains characters from the Marvel Universe that appear in the same comic number. It contains over half a million edges. It is formatted in the following way:</p>
+<pre><code>BLACK PANTHER/T'CHAL&lt;tab&gt;HAWK
+BLACK PANTHER/T'CHAL&lt;tab&gt;LOKI [ASGARDIAN]
+BLACK PANTHER/T'CHAL&lt;tab&gt;HULK/DR. ROBERT BRUC
+SPIDER-MAN/PETER PAR&lt;tab&gt;HULK/DR. ROBERT BRUC
+...
+</code></pre>
+<h2 id="user-content-11-import-this-network-into-cytoscape">
+<a aria-hidden="true" class="anchor" href="#user-content-11-import-this-network-into-cytoscape" id="user-content-11-import-this-network-into-cytoscape" name="user-content-11-import-this-network-into-cytoscape"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.1. Import this network into Cytoscape</h2>
+<p>To import it into Cytoscape:</p>
+<ul>
+<li>File &gt; Import &gt; Network from File ...</li>
+<li>Select <code>hero-network.csv</code>
+</li>
+<li>Advanced Options ...: indicate the delimiter is only a tabulator (<strong>TAB</strong>).
+<ul>
+<li>⚠️ If you keep the default delimiter, a comma, or you use tabulator and comma, you will mistakenly get too many nodes (as node names include commas inside) and Cytoscape may hang for a long time or crash.</li>
+</ul>
+</li>
+<li>Column 1 should be "Source" (it's a green disc)</li>
+<li>Column 2 should be "Target" (it's a red target)</li>
+<li>OK</li>
+</ul>
+<p>Tip: change the style to minimalistic to see the graph better.</p>
+<p>[<strong>REPORT</strong>] Include this graph in your report.</p>
+<p>[<strong>REPORT</strong>] Answer the following question: what are the small components that are disconnected from the largest connected component?</p>
+<h2 id="user-content-12-create-sub-graphs">
+<a aria-hidden="true" class="anchor" href="#user-content-12-create-sub-graphs" id="user-content-12-create-sub-graphs" name="user-content-12-create-sub-graphs"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.2. Create sub-graphs</h2>
+<ul>
+<li>Search for the node named "BLACK PANTHER/T'CHAL"
+<ul>
+<li>Option 1: use the search box is on top of the display. Depending on the OS (usually in Linux-based systems) you should add \ in the search in order to exclude special characters: "BLACK\ PANTHER/T'CHAL"</li>
+<li>Option 2: find this node in the node table, select it, and then use the secondary button to indicate "Select nodes from selected rows"</li>
+</ul>
+</li>
+<li>Click on the two-house icon on top, it means <em>neighbor</em>
+</li>
+<li>Now you've selected one character and all his neighbors.</li>
+<li>File &gt; New Network &gt; From selected nodes, all edges</li>
+</ul>
+<p>[<strong>REPORT</strong>] Indicate the number of nodes and edges of this sub-graph, it appears on the left panel next to the name of the network.</p>
+<ul>
+<li>Do the same for a less popular character "ENCHANTRESS"</li>
+<li>Notice the number of nodes is much smaller but the number of edges is not proportionally as small. Why do you think this happens?</li>
+</ul>
+<p>[<strong>REPORT</strong>] Indicate the number of nodes and edges in the sub-graph of nodes connected to "ENCHANTRESS".</p>
+<p>Note that you can also select by other characteristics, such as degree, by creating a filter in the "Select" panel.</p>
+<p>[<strong>REPORT</strong>] Include a brief commentary on the number of nodes and edges in different sub-graphs from different characters. Why do you think influences these numbers?</p>
+<p>⚠️ <strong>Important</strong>: by default Cytoscape has a <a href="http://manual.cytoscape.org/en/stable/Rendering_Engine.html#what-is-level-of-detail-lod" rel="nofollow">level of detail</a> setting that is similar to the one found in videogames. If the current view contains more than <em>render.nodeLabelThreshold</em>, the node labels are not displayed. You can toggle between full details and reduced details using "View &gt; Show Graphics Details" and "View &gt; Hide Graphics Details." You can also permanently adjust this by going to "Edit &gt; Preferences". Depending on the computer, you can set this up to 2000 from the default of 200. Be careful: this will block your computer when dealing with large networks such as the hero network.</p>
+<h1 id="user-content-2-creating-a-network">
+<a aria-hidden="true" class="anchor" href="#user-content-2-creating-a-network" id="user-content-2-creating-a-network" name="user-content-2-creating-a-network"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Creating a network</h1>
+<p>Now we will practice creating small networks.</p>
+<h2 id="user-content-21-creating-from-existing-spreadsheets">
+<a aria-hidden="true" class="anchor" href="#user-content-21-creating-from-existing-spreadsheets" id="user-content-21-creating-from-existing-spreadsheets" name="user-content-21-creating-from-existing-spreadsheets"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.1. Creating from existing spreadsheets</h2>
+<p>We will create a network from two spreadsheets. The first one, <code>got-characters.csv</code>, contains the name and house of the characters in the series <em>Game of Thrones</em> by George R. R. Martin. The second one, <code>got-relationships.csv</code> contains relationships between characters.</p>
+<p>First we import the edges:</p>
+<ul>
+<li><code>File &gt; Import &gt; Network from file ...</code></li>
+<li>Use file <code>got-relationships.csv</code>
+</li>
+<li>Select for <code>src</code>: "Source Node" (it's a green disc)</li>
+<li>Select for <code>dest</code>: "Target Node" (it's a red target)</li>
+<li>Select "Edge Attribute" for the other columns</li>
+</ul>
+<p>Now we import the node attribute:</p>
+<ul>
+<li><code>File &gt; Import &gt; Table from file ...</code></li>
+<li>Use file <code>got-characters.csv</code>
+</li>
+<li>Import data as "Node Table Columns"</li>
+<li>The first column (id) should be the key.</li>
+<li>The other columns should be attributes</li>
+</ul>
+<p>Next, style the network:</p>
+<ul>
+<li>Use the <em>character-name</em> of the character as the node label.</li>
+<li>Use the <em>degree</em> as the size of the node (you will need to run the network analysis first with Tools &gt; Analyze Network)</li>
+<li>Use the <em>house-birth</em> attribute to determine the shape and color of nodes. Use style, shape, fill-color, and discrete mappings.</li>
+<li>Use the <em>relationship</em> attribute to label edges. Leave edges in color black, except for edges representing killing, which should be in red.</li>
+</ul>
+<p>[<strong>REPORT</strong>] Include the graph of <em>Game of Thrones</em>.</p>
+<p>[<strong>REPORT</strong>] Show one example of a multi-edge in this graph. Indicate which characters are involved.</p>
+<p>[<strong>REPORT</strong>] Show one example of a loop in this graph. Indicate which characters are involved.</p>
+<p>[<strong>REPORT</strong>] Indicate a brief commentary on any interesting phenomenon you observe on this graph.</p>
+<h2 id="user-content-22-create-a-new-network-in-a-csv-file">
+<a aria-hidden="true" class="anchor" href="#user-content-22-create-a-new-network-in-a-csv-file" id="user-content-22-create-a-new-network-in-a-csv-file" name="user-content-22-create-a-new-network-in-a-csv-file"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.2. Create a new network in a CSV file</h2>
+<p>Now, create a network on your own using CSV files, on whatever topic of your choice as long as the network is <strong>real</strong>. You will need two CSV files: one for the network and one for the attributes. The network should include between 15 and 30 nodes.</p>
+<p>Some ideas:</p>
+<ul>
+<li>Nodes can be characters in a movie, edges connecting characters depending on their affinity.</li>
+<li>Nodes can be music bands or artists, attributes whether the node is a band or an artist, edges connect artists to the bands they've played in.</li>
+<li>Nodes can be countries, attributes can be population sizes, connections can be countries that share a border.</li>
+<li>Note that edges can also have attributes, which you can use to change the color or style of lines in the graph.</li>
+</ul>
+<p>These are only ideas. Be creative.</p>
+<p><em>Tip:</em> to include a legend, you can use the Cytoscape app <a href="https://apps.cytoscape.org/apps/legendcreator" rel="nofollow">legend creator</a>.</p>
+<p>[<strong>REPORT</strong>] Describe the graph you created.</p>
+<p>[<strong>REPORT</strong>] Include two tables with the contents of the CSV files you created (not screenshots).</p>
+<p>[<strong>REPORT</strong>] Draw the graph in Cytoscape and include it in your report.</p>
+<h1 id="user-content-deliver-individually-1">
+<a aria-hidden="true" class="anchor" href="#user-content-deliver-individually-1" id="user-content-deliver-individually-1" name="user-content-deliver-individually-1"><span aria-hidden="true" class="octicon octicon-link"></span></a>DELIVER (INDIVIDUALLY)</h1>
+<p>Deliver a report describing these networks, having at most 4 pages in PDF. The report should have <strong>three numbered sections</strong>: one for the <em>Marvel</em> network, one for <em>Game of Thrones</em>, and one for the network you created. Remember to include all of the elements marked [<strong>REPORT</strong>] above.</p>
+<p><strong>Note</strong>: If you find any mistake in the Game of Thrones graph, e.g., something wrong with respect to the TV series, please send us the corrected CSV files.</p>
+<p>Your report should end with the following text:</p>
+<p><strong>I hereby declare that all of the text, tables, and figures in this report were produced by myself.</strong></p>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

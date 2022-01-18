@@ -1,0 +1,130 @@
+<!-- ?xml version='1.0' encoding='UTF-8'? -->
+<link href="/github-markdown-css/github-css.css" rel="stylesheet"/>
+<meta charset="utf-8" content="text/html"/>
+<div class="gist">
+<style class="formula-style">
+        svg.gh-md-to-html-formula {
+            fill: black;
+        }
+    </style>
+<div class="gist-file"> <!-- This is the class that is responsible for the boxing! -->
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file" id="user-content-article-cytoscape_fast_guide">
+<div class="Box-body readme blob js-code-block-container p-5 p-xl-6" id="user-content-file-docker-image-pull-md-readme" style="margin-left: 40px; margin-right: 40px; margin-top: 20px; margin-bottom: 20px">
+<article class="markdown-body entry-content container-lg" itemprop="text">
+<h1 id="user-content-cytoscape---quick-start-guide">
+<a aria-hidden="true" class="anchor" href="#user-content-cytoscape---quick-start-guide" id="user-content-cytoscape---quick-start-guide" name="user-content-cytoscape---quick-start-guide"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cytoscape - Quick start guide</h1>
+<h2 id="user-content-contents-of-this-session">
+<a aria-hidden="true" class="anchor" href="#user-content-contents-of-this-session" id="user-content-contents-of-this-session" name="user-content-contents-of-this-session"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contents of this session</h2>
+<ol>
+<li>About Cytoscape</li>
+<li>Importing a network</li>
+<li>User interface and basic information</li>
+<li>Layouts</li>
+<li>Filtering</li>
+<li>Annotations</li>
+<li>Styles</li>
+<li>Apps installation</li>
+</ol>
+<h1 id="user-content-1-about-cytoscape">
+<a aria-hidden="true" class="anchor" href="#user-content-1-about-cytoscape" id="user-content-1-about-cytoscape" name="user-content-1-about-cytoscape"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. About Cytoscape</h1>
+<p><a href="http://www.cytoscape.org/" rel="nofollow">Cytoscape</a> is an open source software platform for visualizing complex networks and integrating these with any type of attribute data.</p>
+<p>You can look up the user manual at <a href="https://manual.cytoscape.org/en/stable" rel="nofollow">https://manual.cytoscape.org/en/stable</a>.</p>
+<h1 id="user-content-2-importing-a-network">
+<a aria-hidden="true" class="anchor" href="#user-content-2-importing-a-network" id="user-content-2-importing-a-network" name="user-content-2-importing-a-network"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Importing a network</h1>
+<ul>
+<li><code>File &gt; Import &gt; Network from File ...</code></li>
+</ul>
+<p>If asked, select <em>shared name</em> for the node identifier column. This will transform node identifiers into a column named "shared name" internally.</p>
+<h1 id="user-content-3-user-interface-and-basic-information">
+<a aria-hidden="true" class="anchor" href="#user-content-3-user-interface-and-basic-information" id="user-content-3-user-interface-and-basic-information" name="user-content-3-user-interface-and-basic-information"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. User interface and basic information</h1>
+<p><a href="https://manual.cytoscape.org/en/stable/Quick_Tour_of_Cytoscape.html#basic-features" rel="nofollow">Manual</a></p>
+<h3 id="user-content-control-panel-left-window">
+<a aria-hidden="true" class="anchor" href="#user-content-control-panel-left-window" id="user-content-control-panel-left-window" name="user-content-control-panel-left-window"><span aria-hidden="true" class="octicon octicon-link"></span></a>Control Panel (left window)</h3>
+<p>You can switch the following panels:</p>
+<ul>
+<li>
+<p>Network manager</p>
+<p>Loaded networks are listed along with their number of nodes and edges. Select a network to display.</p>
+</li>
+<li>
+<p>Style</p>
+<p>Detailed styles for the information to be displayed can be applied to nodes, edges, entire networks, and tables by selecting the corresponding tab at the bottom of the panel (see section Styles).</p>
+</li>
+<li>
+<p>Filter</p>
+<p>Filters on columns and degrees can be created and applied to be displayed (see section Filtering).</p>
+</li>
+<li>
+<p>Annotations</p>
+<p>Anotations are created in the Network View and the text and properties can be modified here (see section Annotations).</p>
+</li>
+</ul>
+<h3 id="user-content-table-panel-bottom-right-window">
+<a aria-hidden="true" class="anchor" href="#user-content-table-panel-bottom-right-window" id="user-content-table-panel-bottom-right-window" name="user-content-table-panel-bottom-right-window"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table Panel (bottom right window)</h3>
+<p>You can select among Node, Edge, and Network tables to show columns of selected (or all) nodes and edges. The values can be ordered and modified. Nodes and edges can be selected using the secondary button to indicate "Select nodes/edges from selected rows".</p>
+<h3 id="user-content-network-view-top-right-window">
+<a aria-hidden="true" class="anchor" href="#user-content-network-view-top-right-window" id="user-content-network-view-top-right-window" name="user-content-network-view-top-right-window"><span aria-hidden="true" class="octicon octicon-link"></span></a>Network View (top right window)</h3>
+<p>Displays the network graph. At the bottom there are a set of tools.</p>
+<p>You can move (click and drag) and zoom (scroll) the view. Nodes and edges can be selected/deselected by [CTRL+] clicking. Use the search box on the top right panel to select nodes and edges by name.</p>
+<h1 id="user-content-4-layouts">
+<a aria-hidden="true" class="anchor" href="#user-content-4-layouts" id="user-content-4-layouts" name="user-content-4-layouts"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. Layouts</h1>
+<p><a href="https://manual.cytoscape.org/en/stable/Navigation_and_Layout.html?highlight=layouts#automatic-layout-algorithms" rel="nofollow">Manual</a></p>
+<ul>
+<li>
+<p><code>Layout &gt; Compound Spring Embedder</code></p>
+<p>Algorithm derived from force-directed graph layout algorithms.</p>
+</li>
+<li>
+<p><code>Layout &gt; Prefuse Force Directed Layout &gt; All nodes &gt; scenes</code></p>
+<p>Based on the force-directed paradigm, it is very fast and with the right parameters can provide a very visually pleasing layout.</p>
+<p><a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing" rel="nofollow">Wikipedia</a></p>
+</li>
+</ul>
+<p>Layout calculation may take several minutes for large networks.</p>
+<h1 id="user-content-5-filtering">
+<a aria-hidden="true" class="anchor" href="#user-content-5-filtering" id="user-content-5-filtering" name="user-content-5-filtering"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. Filtering</h1>
+<p><a href="https://manual.cytoscape.org/en/stable/Finding_and_Filtering_Nodes_and_Edges.html#filters" rel="nofollow">Manual</a></p>
+<ul>
+<li>
+<code>Select Filter tab in the Control Panel</code> to access Filter Panel</li>
+<li>Modify default filter or add a new filter</li>
+<li>
+<code>Select Column, Degree, or Topology filter and apply</code>. Examine changes in the Table Panel and Network View</li>
+<li>Try "Select" and "Show" visualization modes (at bottom)</li>
+</ul>
+<p><em>Note: Changing style properties of a given style (e.g., default) applies (if supported) to all the networks using such style in the current session.</em></p>
+<h1 id="user-content-6-annotations">
+<a aria-hidden="true" class="anchor" href="#user-content-6-annotations" id="user-content-6-annotations" name="user-content-6-annotations"><span aria-hidden="true" class="octicon octicon-link"></span></a>6. Annotations</h1>
+<ul>
+<li>Right click on blank space in the Network View -&gt; add Text anotation</li>
+<li>
+<code>Select Annotations tab in the Control Panel</code> to access the Annotation Panel and modify the text or its properties.</li>
+<li>You can add arrows in the Network View to point nodes by right-clicking on the text -&gt; add Arrow.</li>
+</ul>
+<h1 id="user-content-7-styles">
+<a aria-hidden="true" class="anchor" href="#user-content-7-styles" id="user-content-7-styles" name="user-content-7-styles"><span aria-hidden="true" class="octicon octicon-link"></span></a>7. Styles</h1>
+<p><a href="https://manual.cytoscape.org/en/stable/Styles.html" rel="nofollow">Manual</a></p>
+<ul>
+<li><code>Select Style tab in the Control Panel</code></li>
+<li>
+<code>Select Node/Edge/Network/Table tab</code> to choose a target to style</li>
+<li>You can select a predefined style from the Style drop-down to be applied (default is used the first time)</li>
+<li>You can modify any property of the current style (properties are shown if selected in the Properties drop-down)</li>
+</ul>
+<h1 id="user-content-8-apps-installation">
+<a aria-hidden="true" class="anchor" href="#user-content-8-apps-installation" id="user-content-8-apps-installation" name="user-content-8-apps-installation"><span aria-hidden="true" class="octicon octicon-link"></span></a>8. Apps installation</h1>
+<p>Choose one of the following options to install an APP:</p>
+<ol>
+<li>Install from the <a href="https://apps.cytoscape.org/apps" rel="nofollow">Cytoscap store</a> (keep Cytoscape application open)</li>
+<li>Download a jar file from <a href="https://apps.cytoscape.org/apps" rel="nofollow">Cytoscap store</a> and then select the <code>Apps &gt; App Manager</code> and <code>Install from file ...</code>.</li>
+</ol>
+<hr/>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
