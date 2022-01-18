@@ -1,1 +1,1 @@
-# sna
+# SNA - Social Network Analysys course
