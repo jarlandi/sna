@@ -14,7 +14,7 @@ You will need:
    * Jupyter Notebook ([installation instructions](https://jupyter.org/install.html))
 * Or alternatively, you can use the [Anaconda](https://www.anaconda.com/products/individual) Python package manager for data science which includes all the above Python packages.
 
-## Hardware requirements
+## Hardware availability
 
 In the lab session you can use either a PC from the lab or your oun laptop. As is expected that sometimes you may need to continue your practice work out of the laboratori, you can easily to access your personal *W* drive from the lab PC to store your ongoing work.
 
