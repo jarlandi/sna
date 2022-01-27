@@ -16,7 +16,7 @@ You will need:
 
 ## Hardware availability
 
-In the lab session you can use either a PC from the lab or your oun laptop. As is expected that sometimes you may need to continue your practice work out of the laboratori, you can easily to access your personal *W* drive from the lab PC to store your ongoing work.
+In the lab session you can use either a PC from the lab or your own laptop. As is expected that sometimes you may need to continue your practice work out of the laboratori, you can easily to access your personal *W* drive from the lab PC to store your ongoing work.
 
 ## Practice sessions
 
