@@ -7,7 +7,6 @@
 You will need:
 
 * [Cytoscape 3.8](https://cytoscape.org/download.html) or higher
-* The [clustermaker2 plug-in](https://apps.cytoscape.org/apps/clustermaker2) for Cytoscape
 * Python 3.8 or higher with the following Python packages installed:
    * [networkx](https://networkx.github.io/)
    * [matplotlib](https://matplotlib.org/)
