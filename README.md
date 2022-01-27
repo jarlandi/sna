@@ -11,9 +11,8 @@ You will need:
    * [networkx](https://networkx.github.io/)
    * [matplotlib](https://matplotlib.org/)
    * [numpy](https://numpy.org/)
-   * Jupyter Notebooks.
-   * Follow [these instructions](https://jupyter.org/install.html).
-* Or alternatively, you can use the [Anaconda](https://www.anaconda.com/products/individual) Python package manager for data science.
+   * Jupyter Notebooks ([installation instructions](https://jupyter.org/install.html))
+* Or alternatively, you can use the [Anaconda](https://www.anaconda.com/products/individual) Python package manager for data science which includes all above Python packages.
 
 ## Practice sessions
 
