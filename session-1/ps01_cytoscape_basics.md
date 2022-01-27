@@ -175,7 +175,7 @@ Install [ClusterMaker2 release](https://apps.cytoscape.org/apps/clustermaker2) d
 
 # DELIVER (INDIVIDUALLY)
 
-:warning: First of all, read "[delivering your report](../upf/upf-evaluation.md)" on the evaluation guidelines, and check your report against those guidelines before submitting.
+:warning: Have you read the README file in the root of this repository? If not, check the delivery requirements.
 
 Deliver a brief report of at most 4 pages (it can be less!), in PDF format. Organize your report as follows:
 
@@ -186,4 +186,4 @@ Deliver a brief report of at most 4 pages (it can be less!), in PDF format. Orga
 
 Your report should end with the following text:
 
-**I hereby declare that all of the text, tables, and figures in this report were produced by myself.**
+**I/we hereby declare that, except for the code provided by the course instructors, all of my/our code, report, and figures were produced by myself/ourselves.**

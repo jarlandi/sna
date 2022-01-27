@@ -28,12 +28,14 @@ Each session describe the activities that the students must perform during the p
 
 :bulb: **Read the practice descriptions before the session,** as they can be sometimes long.
 
-At the end of each handout there is a description of what you should deliver.
+## Delivery requirements
 
 Each document must be submitted twice to the Drop box (*Espai compartit*) section of Poliformat site:
 
 1. Version 0: To be delivered by the end of its corresponding lab session including the activities carried out during the session. A mid-term submission (don't worry if you did not finish all the activities).
 2. Version 1: To be delivered the day before the next session (deadline 23:55 h). All activities are expected to be complete.
+
+If you do not upload the Version 1, the instructor will understant that Version o is the final submission, and it will be graded under this premise.
 
 Delivered files must be named as: `session-X-v0.EXTENSION` or `session-X-v1.EXTENSION`, respectively, where `X` must be the session number, and `EXTENSION` can be `md` (markup file), `ypynb` (jupyter file), or `pdf`, depending on the session requirements.
 
