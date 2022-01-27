@@ -26,7 +26,7 @@ Each session describe the activities that the students must perform during the p
 
 At the end of each handout there is a description of what you should deliver.
 
-Each document must be submitted twice:
+Each document must be submitted twice to the Drop box (*Espai compartit*) section of Poliformat site:
 
 1. Version 0: To be delivered by the end of its corresponding session including the activities carried out during the session. 
 2. Version 1: To be delivered the day before the next session (deadline 23:55 h).
