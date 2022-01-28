@@ -56,7 +56,7 @@ Delivered files must be named as: `session-X-v0.EXTENSION` or `session-X-v1.EXTE
 
 ## Sources Acknowledgment
 
-This material has been extracted from the following sources:
+This material has been extracted and adapted from the following sources:
 
 * *Network Science Course* by Carlos Castillo, Universitat Pompeu Fabra, 2021
 * *Network Science Course* by Albert László Barabási, Cambridge University Press, 2020.
