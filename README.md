@@ -37,7 +37,7 @@ Each document must be submitted twice to the Drop box (*Espai compartit*) sectio
 
 If you do not upload Version 1, the instructor will understant that Version 0 corresponds to the final submission, and it will be graded under this premise.
 
-Delivered files must be named as: `session-X-v0.EXTENSION` or `session-X-v1.EXTENSION`, respectively, where `X` must be the session number, and `EXTENSION` can be `md` (markup file), `ypynb` (jupyter file), or `pdf`, depending on the session requirements.
+Delivered files must be named as: `session-X-v0.EXTENSION` or `session-X-v1.EXTENSION`, respectively, where `X` must be the session number, and `EXTENSION` can be `pdf`, `ypynb` (jupyter file), or `md` (markup file), depending on the session requirements. Not following this patterns will incur in a significant decrease of the grade.
 
 ## Tutorials/references
 
@@ -53,3 +53,16 @@ Delivered files must be named as: `session-X-v0.EXTENSION` or `session-X-v1.EXTE
 * [NetworkX documentation](https://networkx.github.io/)
 * [Social network analysis with NetworkX](https://blog.dominodatalab.com/social-network-analysis-with-networkx/) by Manojit Nandi
 * [NetworkX: Network analysis with Python](https://www.cl.cam.ac.uk/~cm542/teaching/2010/stna-pdfs/stna-lecture8.pdf) by Salvatore Scellato
+
+## Sources Acknowledgment
+
+This material has been extracted from the following sources:
+
+* *Network Science Course* by Carlos Castillo, Universitat Pompeu Fabra, 2021
+* *Network Science Course* by Albert László Barabási, Cambridge University Press, 2020.
+* *Data Science & Complex Networks* book by Guido Caldarelli and Alessandro Chessa, Oxford University Press, 2016
+
+
+
+
+
