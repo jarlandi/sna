@@ -33,7 +33,7 @@ Each session describe the activities that the students must perform during the p
 The contents to be included in the document for delivering are specified in the last section of the handout of every session. Each document must be submitted twice to the Drop box (*Espai compartit*) section of Poliformat site:
 
 1. Version 0: To be delivered by the end of its corresponding lab session including the activities carried out during the session. This is intended to be a **mid-term submission**: don't worry if you did not finish all the activities.
-2. Version 1: To be delivered the day before the next session (deadline 23:55 h). **Final submission**: all activities are expected to be complete.
+2. Version 1: To be delivered the day before the next session (deadline 23:55 h). This is the **final submission** of a session: all activities are expected to be complete.
 
 If you do not upload Version 1, the instructor will understant that Version 0 corresponds to the final submission, and the it will be graded under this premise.
 
