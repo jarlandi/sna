@@ -58,9 +58,9 @@ Delivered files must be named as: `session-X-v0.EXTENSION` or `session-X-v1.EXTE
 
 This material has been extracted and adapted from the following sources:
 
-* *Network Science Course* by Carlos Castillo, Universitat Pompeu Fabra, 2021
+* *Network Science Course* by Carlos Castillo, Universitat Pompeu Fabra, 2021.
 * *Network Science Course* by Albert László Barabási, Cambridge University Press, 2020.
-* *Data Science & Complex Networks* book by Guido Caldarelli and Alessandro Chessa, Oxford University Press, 2016
+* *Data Science & Complex Networks* book by Guido Caldarelli and Alessandro Chessa, Oxford University Press, 2016.
 
 
 
