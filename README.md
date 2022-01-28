@@ -37,7 +37,7 @@ The contents to be included in the document for delivering are specified in the 
 
 If you do not upload Version 1, the instructor will understant that Version 0 corresponds to the final submission, and the it will be graded under this premise.
 
-Delivered files must be named as: `session-X-v0.EXTENSION` or `session-X-v1.EXTENSION`, respectively, where `X` must be the session number, and `EXTENSION` can be `pdf`, `ypynb` (jupyter file), or `md` (markup file), depending on the session requirements. Not following this patterns will incur in a significant decrease of the grade.
+Delivered files must be named as: `session-X-v0.EXTENSION` or `session-X-v1.EXTENSION`, accordingly, where `X` must be the session number, and `EXTENSION` can be `pdf`, `ypynb` (jupyter file), or `md` (markup file), depending on the session requirements. Not following this patterns will incur in a significant decrease of the grade.
 
 ## Tutorials/references
 
