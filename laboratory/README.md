@@ -12,7 +12,7 @@ You will need:
    * [matplotlib](https://matplotlib.org/)
    * [numpy](https://numpy.org/)
    * Jupyter Notebook ([installation instructions](https://jupyter.org/install.html))
-* Or alternatively, you can use the [Anaconda](https://www.anaconda.com/products/individual) Python package manager for data science which includes all the above Python packages.
+> Or alternatively, you can use the [Anaconda](https://www.anaconda.com/products/individual) Python package manager for data science which includes all the above Python packages.
 
 ## Hardware availability
 
