@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style type="text/css">
+code {
+    font-family: Ubuntu Mono, DejaVu Sans Mono;
+    background-color: #F0F0F0;
+}
+
+pre {
+    background-color: #F0F0F0;
+}
+</style>
+<meta name="generator" content="ReText 7.1.0">
+<title>ps01_cytoscape_basics</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+<h1>Practice Session 01: Cytoscape Basics</h1>
+<h2>Materials for this session</h2>
+<p>:warning: Do not simply right-click on the file names below, or you will download an HTML file that will not be readable by Cytoscape. See <a href="data/README.md">how to download</a> in the README of the data/ directory.</p>
+<ul>
+<li>File "<a href="data/karate.gml">karate.gml</a>"</li>
+<li>File "<a href="data/starwars.graphml">starwars.graphml</a>"</li>
+<li>File "<a href="data/us_companies_ownership.csv">us_companies_ownership.csv</a>"</li>
+</ul>
+<h2>Contents of this session</h2>
+<ol>
+<li>About Cytoscape</li>
+<li><em>Importing a network</em><ol>
+<li>Editing nodes and edge styles</li>
+</ol>
+</li>
+<li>Performing basic network analysis</li>
+<li>Using a Cytoscape app</li>
+</ol>
+<h1>0. About Cytoscape</h1>
+<p><a href="http://www.cytoscape.org/">Cytoscape</a> is an open source software platform for visualizing complex networks and integrating these with any type of attribute data.</p>
+<h1>1. Importing a network</h1>
+<h2>1.1. Import Zachary's karate club</h2>
+<p>Let's start with a simple case: <a href="https://en.wikipedia.org/wiki/Zachary%27s_karate_club">Zachary's Karate Club</a>. This was a Karate Club with a sensei (#1) and a club president (#34) that split into two: some people remained with the sensei, and the others created a new club with the club president.</p>
+<ul>
+<li><code>File &gt; Import &gt; Network from File ...</code></li>
+<li>Select <code>karate.gml</code></li>
+<li><code>Layout &gt; Compound Spring Embedder</code></li>
+<li>Look at the graph and try to figure out if there is anything special about nodes 1 and 34.</li>
+<li>[<strong>REPORT</strong>] Include in your report this graph plus and a brief paragraph indicating whether nodes 1 and 34 have visually anything special.</li>
+<li>[<strong>REPORT</strong>] The Compound Spring Embedder is an algorithm derived from force-directed graph layour algorithms. Read the Wikipedia page on <a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing">force-directed graph drawing</a> and explain in one paragraph, in your own words, how this works.</li>
+</ul>
+<p><strong>Do not use screenshots</strong>; use <code>File &gt; Export as image</code></p>
+<h2>1.2. Import the Star Wars characters network</h2>
+<p>Open a graph showing characters that appear or are mentioned in the same scene of a Star Wars movie.</p>
+<ul>
+<li><code>File &gt; Import &gt; Network from File ...</code></li>
+<li>Select <code>starwars.graphml</code></li>
+<li>If asked, select <em>shared name</em> for the node identifier column. This will transform node identifiers into a column named "shared name" internally.</li>
+<li><code>Layout &gt; Prefuse Force Directed Layout &gt; All nodes &gt; scenes</code></li>
+<li>Find a node with degree larger than <em>D=20</em></li>
+<li>[<strong>REPORT</strong>] Include in your report this graph. Indicate which character has degree larger than <em>D</em> (right click on blank space -&gt; add text, then right click on the text -&gt; add arrow).</li>
+<li>[<strong>REPORT</strong>] Include a brief commentary of what kinds of characters are represented by nodes with degree larger than <em>D</em></li>
+</ul>
+<h2>1.3. Import US companies co-ownership</h2>
+<p>Open a graph representing company co-ownership in the US:</p>
+<ul>
+<li><code>File &gt; Import &gt; Network from File ...</code></li>
+<li>Select <code>us_companies_ownership.csv</code></li>
+<li>Click <code>OK</code> (accept default import)</li>
+<li>It might take a couple of minutes to open</li>
+<li>Layout &gt; Edge Weighted Spring Embedder (might take ~10 minutes in some PCs)</li>
+<li>[<strong>REPORT</strong>] Include in your report this graph.</li>
+<li>[<strong>REPORT</strong>] Do you see more than one connected component? What do connected components represent in this graph?</li>
+<li>[<strong>REPORT</strong>] Include a brief commentary on large-degree nodes in this graph, which are they? What do those nodes represent?</li>
+</ul>
+<p>Note: you can zoom in and zoom out with the mouse scroll wheel, you can also use the panel on the bottom-right of the screen to navigate the graph.</p>
+<h1>2. How to edit node and edge styles</h1>
+<p><em>You do not need to include anything from this part (part 2) in your report.</em></p>
+<p>Reload the Karate Club dataset (<code>karate.gml</code>).</p>
+<p>Now you can play with the "Style" panel (top-left, between "Network" and "Filter"). Here are some ideas.</p>
+<h2>2.1. How to change the style of the entire network</h2>
+<p>To style the entire networks in different ways:</p>
+<ul>
+<li>Play with predefined styles, e.g. "Minimal", "Curved", or others.</li>
+</ul>
+<h2>2.2. How to name nodes</h2>
+<p>To include in each node its name:</p>
+<ul>
+<li>In the label property,</li>
+<li>create a "Passthrough mapping"</li>
+<li>for attribute "name"</li>
+</ul>
+<p>To remove these names:</p>
+<ul>
+<li>Remove the mapping (trash can icon)</li>
+</ul>
+<h2>2.3. How to change the shape of node</h2>
+<p>To change the shape of nodes:</p>
+<ul>
+<li>Click onzsdfsdgfsgdsfg XIMO the drawing to the left of "Shape" and choose another shape</li>
+</ul>
+<h2>2.4. How to change edge width</h2>
+<p>To change the width of edges:</p>
+<ul>
+<li>Click on "Edge" on bottom left (between "Node" and "Network")</li>
+<li>Click on "Width" property</li>
+<li>Mapping Type = Continuous Mapping</li>
+<li>Column = scenes (this will work in the <em>Star Wars</em> graph, which has a column with the number of scenes in common)</li>
+<li>Change the "Current Mapping" by double clicking. You should see a window "Continuous Mapping Editor ..."</li>
+<li>Create a mapping that gives a clear visual separation between thin and thick edges, by editing the mapping so that it has a broader range of values</li>
+</ul>
+<h2>2.5. How to add arrows</h2>
+<p>To add arrows, you need a directed graph such as the company ownership dataset.</p>
+<ul>
+<li>Change the setting of "Target Arrow Shape".</li>
+</ul>
+<h2>2.6. How to change the entire layout</h2>
+<p>Try some layouts ("Layout" menu)</p>
+<ul>
+<li>Degree Sorted Circle Layout &gt; All nodes</li>
+<li>Edge Weighted Spring Embedded Layout</li>
+<li>Try this with the Karate Club, look for nodes 1 and 34.</li>
+<li>Prefuse Force Directed Layout</li>
+</ul>
+<p><em>You do not need to include anything from this part (part 2) in your report.</em></p>
+<h1>3. Basic network analysis</h1>
+<h2>3.1. Analyze network</h2>
+<p>Perform basic network analysis. <code>Tools &gt; Analyze network</code>. Consider the network is not directed.</p>
+<ul>
+<li>Load the Karate Club network</li>
+<li>The analysis adds some node attributes</li>
+<li>Look at these node attributes (e.g., find the node with the largest betweenness centrality)</li>
+<li>[<strong>REPORT</strong>] Indicate which are the two nodes with largest betweenness centrality in the Karate Club</li>
+<li>Change the fill color of nodes to be a <em>continuous mapping</em> of column <em>Betweenness Centrality</em>; choose the colors so that higher betweenness centrality is associated with a darker color.</li>
+<li>[<strong>REPORT</strong>] Include this graph in your report</li>
+</ul>
+<h2>3.2. Plot different distributions</h2>
+<p>Look at the results from the network analysis (you will need to go to <code>View &gt; Show results panel</code> -- if it does not show up, try hiding and showing the results panel)</p>
+<ul>
+<li>[<strong>REPORT</strong>] Include two plots with degree distributions in Karate Club and Star Wars</li>
+<li>[<strong>REPORT</strong>] Include two plots with the distribution of shortest path lengths in Karate Club and Star Wars</li>
+</ul>
+<h2>3.3. Style the network</h2>
+<ul>
+<li>Load the Star Wars network</li>
+<li>Make the size of the node larger either for nodes with high degree or nodes with high betweenness</li>
+<li>Change the width and color of edges so it depends o the "scenes" attribute of the network (number of scenes in common). More scenes should mean thicker and darker edges.</li>
+<li>[<strong>REPORT</strong>] Include an image of the network from <em>Star Wars</em>, styled as indicated above</li>
+</ul>
+<h1>4. Use a Cytoscape App (ClusterMaker2)</h1>
+<p>Cytoscape has "apps" that can be installed and used.</p>
+<h2>4.1. Install ClusterMaker2</h2>
+<p>Install ClusterMaker2 (<code>Apps &gt; App Manager</code>). You may need to download a jar file from the <a href="https://apps.cytoscape.org/apps/clustermaker2">releases</a> directory of clustermaker2, and then <code>Install from file ...</code> in the App Manager.</p>
+<h2>4.2. Use ClusterMaker2</h2>
+<p>Run the <a href="https://en.wikipedia.org/wiki/Affinity_propagation">affinity propagation</a> clustering algorithm in ClusterMaker2 (<code>Apps &gt; ClusterMaker2 &gt; Affinity Propagation ...</code>) on the <em>Star Wars</em> network.</p>
+<ul>
+<li>Select any temporary folder if prompted</li>
+<li>ClusterMaker2 requires an attribute for the weight: use <code>Array source = scenes</code> in <em>Star Wars</em></li>
+<li>Once you run it, the network will have a new attribute in the nodes (in the node table you will see an attribute named <code>_APCluster</code>)</li>
+<li>Use the new attribute in the nodes for "Fill color" using a "Discrete mapping" on <code>_APCluster.</code> You might have to pick the color for each group, just pick a color for the three largest groups.</li>
+</ul>
+<p>[<strong>REPORT</strong>] Include in your report an image of the Star Wars network with the three largest clusters in three different colors (the rest of the nodes can be white).</p>
+<p>[<strong>REPORT</strong>] Include a brief commentary on what do you see in these clusters, what do you think they represent and why.</p>
+<h2>4.3. Apply to Karate Club</h2>
+<p>Use ClusterMaker2 on the Karate Club</p>
+<ul>
+<li>Here you MUST run the network analyzer first so you can have "Edge betweenness" as an attribute in edges</li>
+<li>Use "Edge betweenness" as the attribute for the weight (<code>Array source</code>)</li>
+<li>Run the module, you should get two groups, led by #1 and #34 . Are they close to the actual way in which this club splitted?</li>
+</ul>
+<p><img alt="Karate Club" src="karate-true-communities.png"></p>
+<p>[<strong>REPORT</strong>] Include in your report an image of the Karate Club network with nodes painted according to clusters.</p>
+<p>[<strong>REPORT</strong>] Include a brief commentary on what do you see in these clusters, and whether they have some relationship with the way in which the Karate Club actually splitted</p>
+<h1>DELIVER (INDIVIDUALLY)</h1>
+<p>:warning: First of all, read "<a href="../upf/upf-evaluation.md">delivering your report</a>" on the evaluation guidelines, and check your report against those guidelines before submitting.</p>
+<p>Deliver a brief report of at most 4 pages (it can be less!), in PDF format. Organize your report as follows:</p>
+<ul>
+<li>The first section should briefly describe the three networks, including the number of nodes and edges in each one; you can make a table with this.</li>
+<li>Then, you should have one section about the <em>Karate Club</em>, one section about <em>Star Wars</em>, and one brief section about the <em>US Companies</em> network; include in each section the elements marked [<strong>REPORT</strong>] above.</li>
+</ul>
+<p><strong>Please be brief,</strong> you do not need to write too much, specially if you are not going to say anything substantive: your report can be less than four pages. A "brief commentary" means one or two paragraphs.</p>
+<p>Your report should end with the following text:</p>
+<p><strong>I hereby declare that all of the text, tables, and figures in this report were produced by myself.</strong></p>
+
+</body>
+</html>
