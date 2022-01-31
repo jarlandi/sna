@@ -37,7 +37,7 @@ It should be treated as an undirected newtwork.
 * `Layout > Compound Spring Embedder`
 * Look at the graph and try to figure out if there is anything special about nodes 1 and 34.
 * [**REPORT**] Include in your report this graph plus and a brief paragraph indicating whether nodes 1 and 34 have visually anything special.
-* [**REPORT**] The Compound Spring Embedder is an algorithm derived from force-directed graph layour algorithms. Read the Wikipedia page on [force-directed graph drawing](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) and explain in one paragraph, in your own words, how this works.
+* [**REPORT**] The Compound Spring Embedder is an algorithm derived from force-directed graph layout algorithms. Read the Wikipedia page on [force-directed graph drawing](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) and explain in one paragraph, in your own words, how this works.
 
 :warning: Do not use screenshots to catch images for the report; use `File > Export as image`
 
