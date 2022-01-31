@@ -83,7 +83,7 @@ In Control Panel, <ins>select Karate Club network</ins>, then, select Style tab 
 * `Select Network tab`
 * Play with predefined styles, e.g., "BioPAX", "Minimal", "Curved", "Directed", or others.
 
----------------------------------- :eyes: Directed edges can be drawn from undirected graphs because edges are specified
+:eyes: In common file formats, edges are specified only once. Independently that a direccion (source --> target) could be specified in the file, the applications can visualize any network as an undirected or directed one, depending on the layout chosen.
 
 ### Name nodes
 
