@@ -41,7 +41,7 @@ It should be treated as an undirected newtwork.
 
 :warning: Do not use screenshots to catch images for the report; use `File > Export as image`
 
-Please, be brief. A "brief commentary" means one or two paragraphs.
+:warning: Be brief in all your commentars.
 
 ### Import the Star Wars characters network
 
