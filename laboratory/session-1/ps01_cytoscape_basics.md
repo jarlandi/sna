@@ -45,15 +45,15 @@ It should be treated as an undirected newtwork.
 
 ### Import the Star Wars characters network
 
-Compilation of haracters that appears in a Star Wars movie. The *scene* attribute (column in Table View) means the number of scenes the characters share or in which they are mentioned.
+This is a compilation of characters that appear in a Star Wars movie. The *scene* attribute (column in Table View) means the number of scenes the characters share or in which they are mentioned.
 
 It should be treated as an undirected newtwork.
 
 * `File > Import > Network from File ...`
 * Select `starwars.graphml`
 * If asked, select *shared name* for the node identifier column. This will transform node identifiers into a column named "shared name" internally.
-* `Layout > Prefuse Force Directed Layout > All nodes > scenes`
-* Find nodes with degree larger than *D=30*. Use the Filter Panel (in Control Panel). Check the effect of the `select/show` selection (at bottom) on the graph view.
+* `Layout > Prefuse Force Directed Layout > All nodes > scenes`. The view should have been slightly improved.
+* Find nodes with degree larger than *D=30*. Use the Filter Panel (in Control Panel). Apply and check the effect of the `select/show` selection (at bottom) on the graph view.
 * Create an annotation indicating a character having a degree larger than *D*: on the graph, right click on blank space -> add text; modify the text in Annotation Panel (in Control Panel); then right click on the text -> add arrow.
 * [**REPORT**] Include this graph in your report. 
 * [**REPORT**] Include a list of the characters represented by nodes with degree larger than *D* (shared name, name, and number of scenes) and brief commentary of what kind of characters they are.
@@ -66,10 +66,11 @@ It can be treated either as a directed or undirected newtwork.
 
 * `File > Import > Network from File ...`
 * Select `us_companies_ownership.csv`
-* Click `OK` and accept default import (it might take a minute)
+* Click `OK` and accept default import (it should take less than a minute)
 * [**REPORT**] Do you see more than one connected component? What do connected components represent in this graph?
-* [**REPORT**] Include a brief commentary on large-degree nodes in this graph, which are they? What do those nodes represent?
-* To be done at home (:warning: it might take up to 20 minutes in a 8-core CPU): `Layout > Edge Weighted Spring Embedder`
+* [**REPORT**] Include a brief commentary on large-degree nodes in this graph, which are they or where are they located in the graph? What do those nodes represent?
+* To be done at home (
+:warning: The next might take up to 20 minutes in a 8-core CPU (so better if you do this out of laboratory): `Layout > Edge Weighted Spring Embedder`
 * [**REPORT**] Include this graph in your report.
 
 # 2. Editing node and edge styles
