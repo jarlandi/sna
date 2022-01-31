@@ -80,33 +80,26 @@ In Control Panel, <ins>select Karate Club network</ins>, then, select Style tab 
 
 ### Change the style of the entire network
 
-* `Select Network tab`
-* Play with predefined styles, e.g., "BioPAX", "Minimal", "Curved", "Directed", or others.
+* In the drop-down menu (on top), play with predefined styles, e.g., "BioPAX", "Minimal", "Curved", "Directed", or others.
 
-:eyes: In common file formats, edges are specified only once. Independently that a direccion (source --> target) could be specified in the file, the applications can visualize any network as an undirected or directed one, depending on the layout chosen.
+:eyes: In common file formats, edges are specified only once. Regardingless that a direction (source --> target) could be specified, or not, in the file, the applications can visualize any network as an undirected or directed one, depending on the layout chosen.
 
 ### Name nodes
 
-* `Select Node tab`
-* Deploy the "Label" property, create a "Passthrough mapping", and choose a couple of nodes to write a name for them in its attribute "name"
+* Select `Node tab` (at the bottom)
+* Deploy the "Label" property, create a "Discrete mapping", and choose a couple of nodes to write a name for them in its attribute "name"
 * You can keep the new names or remove the mapping (trash can icon)
 
 ### Change the shape of the nodes
 
-* Click on the column "Def." (to the left) of the "Shape" property and choose another shape
-
-### Add arrows
-
-To add arrows, you need a directed graph. <ins>Select the US Company Ownership network</ins>.
-
-* Change the setting of "Target Arrow Shape".
+* Click on the column "Def." (to the left) of the "Shape" property and choose a new shape
 
 ### Change the edge width (edge width mapping)
 
-In Control Panel, <ins>select Star Wars network</ins>, then, select Style tab.
+In Control Panel, <ins>select Star Wars network</ins> in `Network tab`.
 
 * Select the node with name "DART VADER" and move it out of the nodes cloud
-* `Select Edge tab`
+* Select `Style tab` and `Edge tab` (at the bottom)
 * Deploy "Width" property (or press "Map." button)
 * Assign Column = scenes
 * Change Mapping Type = Continuous Mapping (if already assigned, reassign)
