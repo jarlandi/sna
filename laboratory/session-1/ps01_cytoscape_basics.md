@@ -35,11 +35,13 @@ It should be treated as an undirected newtwork.
 * `File > Import > Network from File ...`
 * Select `karate.gml`
 * `Layout > Compound Spring Embedder`
-* Look at the graph and try to figure out if there is anything special about nodes 1 and 34.
+* Look at the graph and try to figure out if there is anything special about nodes 1 and 34 (you can pick and drag nodes to get a better view).
 * [**REPORT**] Include in your report this graph plus and a brief paragraph indicating whether nodes 1 and 34 have visually anything special.
 * [**REPORT**] The Compound Spring Embedder is an algorithm derived from force-directed graph layout algorithms. Read the Wikipedia page on [force-directed graph drawing](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) and explain in one paragraph, in your own words, how this works.
 
 :warning: Do not use screenshots to catch images for the report; use `File > Export as image`
+
+Please, be brief. A "brief commentary" means one or two paragraphs.
 
 ### Import the Star Wars characters network
 
@@ -114,7 +116,7 @@ Try some layouts in the Layout menu. For example:
 
 * `Degree Sorted Circle Layout > All nodes`
 * `Edge Weighted Spring Embedded Layout`. Try this with the Karate club, look for nodes 1 and 34.
-* `Prefuse Force Directed Layout` (this is the default layout)
+* `Prefuse Force Directed Layout`
 
 # 3. Performing basic network analysis
 
