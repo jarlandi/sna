@@ -70,7 +70,7 @@ It can be treated either as a directed or undirected newtwork.
 * [**REPORT**] Do you see more than one connected component? What do connected components represent in this graph?
 * [**REPORT**] Include a brief commentary on large-degree nodes in this graph, which are they or where are they located in the graph? What do those nodes represent?
 * To be done at home (
-:warning: The next might take up to 20 minutes in a 8-core CPU (so better if you do this out of laboratory): `Layout > Edge Weighted Spring Embedder`
+`Layout > Edge Weighted Spring Embedder` :warning: The next might take up to 20 minutes in a 8-core CPU, so better if you do this out of the laboratory hours
 * [**REPORT**] Include this graph in your report.
 
 # 2. Editing node and edge styles
