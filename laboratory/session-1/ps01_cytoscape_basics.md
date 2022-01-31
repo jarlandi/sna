@@ -53,8 +53,8 @@ It will be treated as an undirected newtwork.
 * Select `starwars.graphml`
 * If asked, select *shared name* for the node identifier column. This will transform node identifiers into a column named "shared name" internally.
 * `Layout > Prefuse Force Directed Layout > All nodes > scenes`. The view should have been slightly improved.
-* Find nodes with degree larger than *D=30*. Use the Filter Panel (in Control Panel). Apply and check the effect of the `select/show` selection (at bottom) on the graph view.
-* Create an annotation indicating a character having a degree larger than *D*: on the graph, right click on blank space -> add text; modify the text in Annotation Panel (in Control Panel); then right click on the text -> add arrow.
+* Find nodes with degree larger than *D=30*. Use the `Filter Panel` (in `Control Panel`). Apply and check the effect of the `select/show` selection (at bottom) on the graph view.
+* Create an annotation indicating a character having a degree larger than *D*: on the graph, right click on blank space -> add text; modify the text in `Annotation Panel` (in `Control Panel`); then right click on the text -> add arrow.
 * [**REPORT**] Include this graph in your report. 
 * [**REPORT**] Include a list of the characters represented by nodes with degree larger than *D* (shared name, name, and number of scenes) and brief commentary of what kind of characters they are.
 
@@ -74,7 +74,7 @@ It can be treated either as a directed or undirected newtwork.
 
 # 2. Editing node and edge styles
 
-In Control Panel, <ins>select Karate Club network</ins>, then, select Style tab and play with the Style Panel. Here are some ideas.
+In `Control Panel`, <ins>select Karate Club network</ins>, then, select Style tab and play with the Style Panel. Here are some ideas.
 
 *Note: Changing style properties of a given style (e.g., default) applies (if supported) to all the networks using such style in the current session.*
 
@@ -87,7 +87,7 @@ In Control Panel, <ins>select Karate Club network</ins>, then, select Style tab 
 ### Name nodes
 
 * Select `Node tab` (at the bottom)
-* Deploy the "Label" property, create a "Discrete mapping", and choose a couple of nodes to write a name for them in its attribute "name"
+* Deploy "Label" property, create a "Discrete mapping", and choose a couple of nodes to write a name for them in its attribute "name"
 * You can keep the new names or remove the mapping (trash can icon)
 
 ### Change the shape of the nodes
@@ -96,12 +96,12 @@ In Control Panel, <ins>select Karate Club network</ins>, then, select Style tab 
 
 ### Change the edge width (edge width mapping)
 
-<ins>Select Star Wars network</ins> in Control Panel `Network tab`.
+<ins>Select Star Wars network</ins> in `Control Panel` `Network tab`.
 
-* Select the node with name "DART VADER" (columns in Node Table can be sorted) and move it out of the nodes cloud
+* Select the node with name "DART VADER" and move it out of the nodes cloud. If you need some help reed Section "3. User interface and basic information" of the document "cytoscape_fast_guide.md".
 * Select `Style tab` and `Edge tab` (at the bottom)
 * Deploy "Width" property (or press "Map." button)
-* Assign Column = scenes
+* Assign Column = scenes (number of scenes in common). More scenes should mean thicker edges.
 * Change Mapping Type = Continuous Mapping (if already assigned, reassign). Use column "Scene" to map.
 * Click and edit the "Current Mapping" function and broad the range of edge width values to get a clearer visual separation between thin and thick edges
 
@@ -135,12 +135,11 @@ Perform network analysis as follows.
 
 Notice that the explanatory variables (attributes) available to plot vary depending on if the node, edge or network table is selected in Table View.
 
-### Style the network
+### Style the network using the new attributes
 
 <ins>Select Star Wars network</ins>.
 
 * Make the size of the node larger either for nodes with high degree or nodes with high betweenness
-* Change the width and color of edges so it depends on the "scenes" attribute of the network (number of scenes in common). More scenes should mean thicker and darker edges.
 * [**REPORT**] Include an image of the graph styled as indicated above
 
 # 4. Using a Cytoscape App (ClusterMaker2)
@@ -149,7 +148,7 @@ Cytoscape has "apps" that can be installed and used.
 
 ### Install ClusterMaker2
 
-Install [ClusterMaker2 release](https://apps.cytoscape.org/apps/clustermaker2) directly from the Cytoscape store (keep Cytoscape application open). Run the App Manager in the Apps menu, search for "cluster", and check that ClusterMaker2 has been installed.
+Install [ClusterMaker2 release](https://apps.cytoscape.org/apps/clustermaker2). Section "3. User interface and basic information" of the document "cytoscape_fast_guide.md" explains how to.
 
 ### Apply ClusterMaker2 to Star Wars
 
@@ -157,7 +156,7 @@ Install [ClusterMaker2 release](https://apps.cytoscape.org/apps/clustermaker2) d
 
 * In the Apps menu, look for and select the [Affinity Propagation cluster](https://en.wikipedia.org/wiki/Affinity_propagation) clustering algorithm in ClusterMaker (select any temporary folder if prompted)
 * ClusterMaker2 requires an attribute for the weight: use ``Array source = scenes``
-* Run it; then, check that a new attribute in the node table named ``_APCluster`` has been added
+* Run it; then, check that a new attribute in the node table named ``_APCluster`` has been added. Move this column by the scenes column and order their values: you will find that several groups of nodes have been formed.
 * Use the new attribute in the nodes for "Fill color" using a "Discrete mapping" on ``_APCluster.`` You might have to pick the color for each group; just pick a color for the three largest groups.
 * [**REPORT**] Include in your report an image of the graph with the three largest clusters in three different colors.
 * [**REPORT**] Include a brief commentary on what do you see in these clusters, what do you think they represent and why.
@@ -167,7 +166,7 @@ Install [ClusterMaker2 release](https://apps.cytoscape.org/apps/clustermaker2) d
 <ins>Select Karate club network</ins>.
 
 * Run the affinity propagation algorithm in ClusterMaker2.
-* Use "Edge betweenness" as the attribute for the weight (``Array source``). You must have run the network analyzer first so you can have "Edge betweenness" as an attribute in edges
+* Use "Edge betweenness" as the attribute for the weight (``Array source``). You must have run the network analyzer first so you can have "Edge betweenness" as an attribute in edges.
 * Run the module; then, you should get two groups led by #1 and #34. Are they close to the actual way in which this club splitted?
 * [**REPORT**] Include in your report an image of the graph with nodes painted according to clusters.
 * [**REPORT**] Include a brief commentary on what do you see in these clusters, and whether they have some relationship with the way in which the Karate Club actually splitted
