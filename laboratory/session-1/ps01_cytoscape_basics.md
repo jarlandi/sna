@@ -24,6 +24,8 @@ You can look up the user manual at https://manual.cytoscape.org/en/stable.
 
 # 1. Importing a network
 
+Well, before importing, have a fast look at the dataset file contents (just clik on the links above to open in the web browser). You will find three different data formats.
+
 ### Import Zachary's karate club network
 
 Let's start with a simple case: [Zachary's Karate Club](https://en.wikipedia.org/wiki/Zachary%27s_karate_club). This was a Karate Club with a sensei (#1) and a club president (#34) that split into two: some people remained with the sensei, and the others created a new club with the club president.
@@ -62,11 +64,11 @@ It can be treated either as a directed or undirected newtwork.
 
 * `File > Import > Network from File ...`
 * Select `us_companies_ownership.csv`
-* Click `OK` and accept default import (it might take a couple of minutes)
-* `Layout > Edge Weighted Spring Embedder` (:warning: it might take 10-20 minutes)
-* [**REPORT**] Include in your report this graph.
+* Click `OK` and accept default import (it might take a minute)
 * [**REPORT**] Do you see more than one connected component? What do connected components represent in this graph?
 * [**REPORT**] Include a brief commentary on large-degree nodes in this graph, which are they? What do those nodes represent?
+* To be done at home (:warning: it might take up to 20 minutes in a 8-core CPU): `Layout > Edge Weighted Spring Embedder`
+* [**REPORT**] Include this graph in your report.
 
 # 2. Editing node and edge styles
 
@@ -112,7 +114,7 @@ Try some layouts in the Layout menu. For example:
 
 * `Degree Sorted Circle Layout > All nodes`
 * `Edge Weighted Spring Embedded Layout`. Try this with the Karate club, look for nodes 1 and 34.
-* `Prefuse Force Directed Layout`
+* `Prefuse Force Directed Layout` (this is the default layout)
 
 # 3. Performing basic network analysis
 
@@ -125,7 +127,7 @@ Perform network analysis as follows.
 * Select ``Tools > Analyze network`` (consider the network is not directed). The analysis adds some attributes: network attributes (right), node and edge attributes (Table View).
 * Look at the node attributes
 * [**REPORT**] Indicate which are the two nodes with largest betweenness centrality
-* Change the fill color of nodes to be a *continuous mapping* of column *Betweenness Centrality*; choose the colors so that higher betweenness centrality is associated with a darker color.
+* Change the fill color of nodes to be a *continuous mapping* of the column *Betweenness Centrality*; choose the colors so that higher betweenness centrality is associated with a darker color.
 * [**REPORT**] Include this graph in your report
 
 ### Plot distributions
