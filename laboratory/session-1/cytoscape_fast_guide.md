@@ -104,7 +104,8 @@ Layout calculation may take several minutes for large networks.
 Choose one of the following options to install an APP:
 
 1. Install from the [Cytoscap store](https://apps.cytoscape.org/apps) (keep Cytoscape application open)
-1. Download a jar file from [Cytoscap store](https://apps.cytoscape.org/apps) and then select the ``Apps > App Manager`` and ``Install from file ...``.
+1. Select ``Apps > App Manager``, search for the plug-in name, select and press ``Install``.
+1. Download a jar file from [Cytoscap store](https://apps.cytoscape.org/apps) and then select ``Apps > App Manager`` and ``Install from file ...``.
 
 ---------------------------------------------------------------------------------
 
