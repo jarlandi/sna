@@ -30,7 +30,7 @@ Well, before importing, have a fast look at the dataset file contents (just clik
 
 Let's start with a simple case: [Zachary's Karate Club](https://en.wikipedia.org/wiki/Zachary%27s_karate_club). This was a Karate Club with a sensei (#1) and a club president (#34) that split into two: some people remained with the sensei, and the others created a new club with the club president.
 
-It should be treated as an undirected newtwork.
+It will be treated as an undirected newtwork.
 
 * `File > Import > Network from File ...`
 * Select `karate.gml`
@@ -39,7 +39,7 @@ It should be treated as an undirected newtwork.
 * [**REPORT**] Include in your report this graph plus and a brief paragraph indicating whether nodes 1 and 34 have visually anything special.
 * [**REPORT**] The Compound Spring Embedder is an algorithm derived from force-directed graph layout algorithms. Read the Wikipedia page on [force-directed graph drawing](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) and explain in one paragraph, in your own words, how this works.
 
-:warning: Do not use screenshots to catch images for the report; use `File > Export as image`
+:warning: Do not use screenshots to catch images for the report; use `File > Export as image` (only the visible area of the graph is exported).
 
 :warning: Be brief in all your commentars.
 
@@ -47,7 +47,7 @@ It should be treated as an undirected newtwork.
 
 This is a compilation of characters that appear in a Star Wars movie. The *scene* attribute (column in Table View) means the number of scenes the characters share or in which they are mentioned.
 
-It should be treated as an undirected newtwork.
+It will be treated as an undirected newtwork.
 
 * `File > Import > Network from File ...`
 * Select `starwars.graphml`
@@ -69,7 +69,7 @@ It can be treated either as a directed or undirected newtwork.
 * Click `OK` and accept default import (it should take less than a minute)
 * [**REPORT**] Do you see more than one connected component? What do connected components represent in this graph?
 * [**REPORT**] Include a brief commentary on large-degree nodes in this graph, which are they or where are they located in the graph? What do those nodes represent?
-* `Layout > Edge Weighted Spring Embedder` :warning: The next might take up to 20 minutes in a 8-core CPU, so better if you do this out of the laboratory hours
+* `Layout > Edge Weighted Spring Embedder` :warning: This might take up to 20 minutes in a 8-core CPU, so better if you do this out of the laboratory hours (Cancel button works well)
 * [**REPORT**] Include this graph in your report.
 
 # 2. Editing node and edge styles
@@ -81,7 +81,9 @@ In Control Panel, <ins>select Karate Club network</ins>, then, select Style tab 
 ### Change the style of the entire network
 
 * `Select Network tab`
-* Play with predefined styles, e.g., "Minimal", "Curved", "Directed", or others.
+* Play with predefined styles, e.g., "BioPAX", "Minimal", "Curved", "Directed", or others.
+
+---------------------------------- :eyes: Directed edges can be drawn from undirected graphs because edges are specified
 
 ### Name nodes
 
