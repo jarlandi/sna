@@ -96,14 +96,14 @@ In Control Panel, <ins>select Karate Club network</ins>, then, select Style tab 
 
 ### Change the edge width (edge width mapping)
 
-In Control Panel, <ins>select Star Wars network</ins> in `Network tab`.
+<ins>Select Star Wars network</ins> in Control Panel `Network tab`.
 
-* Select the node with name "DART VADER" and move it out of the nodes cloud
+* Select the node with name "DART VADER" (columns in Node Table can be sorted) and move it out of the nodes cloud
 * Select `Style tab` and `Edge tab` (at the bottom)
 * Deploy "Width" property (or press "Map." button)
 * Assign Column = scenes
-* Change Mapping Type = Continuous Mapping (if already assigned, reassign)
-* Click and edit the "Current Mapping" function and broad the range of values to get a clearer visual separation between thin and thick edges
+* Change Mapping Type = Continuous Mapping (if already assigned, reassign). Use column "Scene" to map.
+* Click and edit the "Current Mapping" function and broad the range of edge width values to get a clearer visual separation between thin and thick edges
 
 ### Change the entire layout
 
@@ -131,7 +131,7 @@ Perform network analysis as follows.
 
 * Try hiding and showing the analysis results panel from ``View > Show results panel``
 * [**REPORT**] Include two plots with degree distributions from <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution")
-* [**REPORT**] Include two plots with the distribution of shortest path lengths in <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution")
+* [**REPORT**] Include two plots with the distribution of the average shortest path lengths in <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution")
 
 Notice that the explanatory variables (attributes) available to plot vary depending on if the node, edge or network table is selected in Table View.
 
