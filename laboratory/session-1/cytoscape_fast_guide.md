@@ -31,7 +31,7 @@ If asked, select *shared name* for the node identifier column. This will transfo
 
 ### Control Panel (left window)
 
- You can switch the following panels:
+ You can switch among the following panels (tabs on the left in vertical orientation):
 
 * Network manager
 
