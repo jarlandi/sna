@@ -27,6 +27,8 @@ If asked, select *shared name* for the node identifier column. This will transfo
 
 [Manual](https://manual.cytoscape.org/en/stable/Quick_Tour_of_Cytoscape.html#basic-features)
 
+![cytoscape_fast_guide.png](cytoscape_fast_guide.png)
+
 ### Control Panel (left window)
 
  You can switch the following panels:
@@ -73,7 +75,16 @@ You can move (click and drag) and zoom (scroll) the view. Nodes and edges can be
 
 Layout calculation may take several minutes for large networks.
 
-# 5. Filtering
+# 5. Styles
+
+[Manual](https://manual.cytoscape.org/en/stable/Styles.html)
+
+* `Select Style tab in the Control Panel` (on the left in vertical orientation) to access Style Panel
+* You can select a predefined style from the Style drop-down to be applied (default is used the first time)
+* `Select Node/Edge/Network/Table tab` (at the bottom of the window) to choose a target type to style
+* You can modify any property of the current style (properties are shown if selected in the Properties drop-down)
+
+# 6. Filtering
 
 [Manual](https://manual.cytoscape.org/en/stable/Finding_and_Filtering_Nodes_and_Edges.html#filters)
 
@@ -84,20 +95,11 @@ Layout calculation may take several minutes for large networks.
 
 *Note: Changing style properties of a given style (e.g., default) applies (if supported) to all the networks using such style in the current session.*
 
-# 6. Annotations
+# 7. Annotations
 
 * Right click on blank space in the Network View -> add Text anotation
 * `Select Annotations tab in the Control Panel` to access the Annotation Panel and modify the text or its properties.
 * You can add arrows in the Network View to point nodes by right-clicking on the text -> add Arrow.
-
-# 7. Styles
-
-[Manual](https://manual.cytoscape.org/en/stable/Styles.html)
-
-* `Select Style tab in the Control Panel`
-* `Select Node/Edge/Network/Table tab` to choose a target to style
-* You can select a predefined style from the Style drop-down to be applied (default is used the first time)
-* You can modify any property of the current style (properties are shown if selected in the Properties drop-down)
 
 # 8. Apps installation
 
