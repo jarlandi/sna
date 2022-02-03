@@ -10,11 +10,11 @@ Git installation:
 
 `https://github.com/git-guides/install-git`
 
-Downloading the repository (you can see the files that have changed):
+Downloading the repository:
 
 `git clone https://github.com/jarlandi/sna-upv.git`
 
-Git update. From any location within the sna-upv directory:
+Git update (you can see the files that have changed). From any location within the sna-upv directory:
 
 `git pull`
 
