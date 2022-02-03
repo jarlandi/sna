@@ -18,4 +18,4 @@ Git update. From any location within the sna-upv directory:
 
 `git pull`
 
-Other options are 1) downloading a zip file with all the repository, and 2) show the raw version in your web browser and copy the text. You can find the corresponding buttons in the git web pages. 
+Other options are 1) downloading a zip file including all the repository, and 2) show the raw version in your web browser and copy the text. You can find the corresponding buttons in the git web pages. 
