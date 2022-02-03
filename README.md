@@ -14,7 +14,7 @@ Downloading the repository:
 
 `git clone https://github.com/jarlandi/sna-upv.git`
 
-Git update (you can see the files that have changed). From any location within the sna-upv directory:
+Git update (you can see which files have changed). From any location within the sna-upv directory:
 
 `git pull`
 
