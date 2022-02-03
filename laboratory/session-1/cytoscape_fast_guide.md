@@ -27,7 +27,7 @@ If asked, select *shared name* for the node identifier column. This will transfo
 
 [Manual](https://manual.cytoscape.org/en/stable/Quick_Tour_of_Cytoscape.html#basic-features)
 
-![cytoscape_fast_guide.png](images/cytoscape_fast_guide.png)
+![images/cytoscape_fast_guide.png](images/cytoscape_fast_guide.png)
 
 ### Control Panel (left window)
 
