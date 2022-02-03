@@ -10,7 +10,7 @@ Git installation:
 
 `https://github.com/git-guides/install-git`
 
-Downloading the repository:
+Downloading the repository (you can see the files that have changed):
 
 `git clone https://github.com/jarlandi/sna-upv.git`
 
