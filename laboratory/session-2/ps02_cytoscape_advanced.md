@@ -41,7 +41,7 @@ Tips: you may want to change the style to "Marquee" to see the graph slightly be
 
 * Search and select for the node named "BLACK PANTHER/T'CHAL"
   * Option 1: use the search box located on top of the display. 
-      * :warning: in this version of Cytoscape the search does not work as expected: **use the pattern "*CHAL" to obtain the expected results**.
+      * :warning: in this version of Cytoscape the search does not work as expected: **use the pattern " \*CHAL" to obtain the expected results**.
       * :warning: Depending on the OS (usually in Linux-based systems) you may need to add \ in order to exclude special characters (+ - & | ! ( ) { } [ ] ^ " ~ * ? : \). Also, spaces and quotes are not well managed. Use * as a wildcard.
   * Option 2: find this node in the node table, select it, and then use the secondary button to indicate `Select nodes from selected rows`
 * Select the neighbors of a character: select the caracter and click on the `two-house icon on the top bar`. Note that edges among neighbors are also shown.
