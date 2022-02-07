@@ -37,15 +37,15 @@ To import Marvel Universe SG into Cytoscape:
 
 # 2. Creating sub-networks
 
-* Search and select for the node named "BLACK PANTHER/T'CHAL"
+* Search and select for the node named BLACK PANTHER/T'CHAL
   * Option 1: use the search box located on top of the display
       * :warning: sometimes the search box does not work as expected: **use the pattern "BLACK\ PANTHER/T'CHAL" to obtain the expected results** (blank characters need to be escaped).
   * Option 2: find this node in the node table (you may want to sort the column alphabetically), click on it and use the secondary button to indicate `Select nodes from selected rows`
 * Select the neighbors of BLACK PANTHER/T'CHAL by clicking on the `two-house icon on the top bar` (edges between neighbors are also selected)
 * Create a subnetwork with the selected nodes: `File > New Network > From selected nodes, all edges`
-* Rename this new network as "BLACK PANTHER"
-* Do the same for a less popular character "ENCHANTRESS/AMORA/HE": start from the original network, select this node and its neighbors, create a subnetwork, and rename it as "ENCHANTRESS"
-* Do the same for a very low popular character like "KANE, SUGAR"
+* Rename this new network as BLACK PANTHER
+* Do the same for a less popular character ENCHANTRESS/AMORA/HE: start from the original network, select this node and its neighbors, create a subnetwork, and rename it as ENCHANTRESS
+* Do the same for a very low popular character like KANE, SUGAR
 * Calculate the ratio N/L for all the three above subgraphs
 
 [**REPORT - Q3**] Indicate the number of nodes (N) and edges (L) for all the three subgraphs above (find them in the Network Panel). Also, calculate the average degree, L<sub>max</sub>, and L/L<sub>max</sub> ratio. What are your thoughts about these numbers? Is this what you would expect? Can those numbers be explained from the point of view of characters interacting in the same comic?
