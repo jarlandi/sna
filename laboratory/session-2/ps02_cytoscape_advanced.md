@@ -38,19 +38,17 @@ To import Marvel Universe SG into Cytoscape:
 # 2. Creating sub-networks
 
 * Search and select for the node named "BLACK PANTHER/T'CHAL"
-  * Option 1: use the search box located on top of the display. 
+  * Option 1: use the search box located on top of the display
       * :warning: sometimes the search box does not work as expected: **use the pattern "BLACK\ PANTHER/T'CHAL" to obtain the expected results** (blank characters need to be escaped).
   * Option 2: find this node in the node table (you may want to sort the column alphabetically), click on it and use the secondary button to indicate `Select nodes from selected rows`
-* Select the neighbors of BLACK PANTHER/T'CHAL" by clicking on the `two-house icon on the top bar` (edges among neighbors are also selected).
+* Select the neighbors of BLACK PANTHER/T'CHAL by clicking on the `two-house icon on the top bar` (edges between neighbors are also selected)
 * Create a subnetwork with the selected nodes: `File > New Network > From selected nodes, all edges`
-* Rename the new network as "BLACK PANTHER".
-* Do the same for a less popular character "ENCHANTRESS/AMORA/HE": start from the original network, select this node and its neighbors, create a subnetwork, and rename it as "ENCHANTRESS".
-* Do the same for a very low popular character like "KANE, SUGAR", and rename it as "KANE, SUGAR"
+* Rename this new network as "BLACK PANTHER"
+* Do the same for a less popular character "ENCHANTRESS/AMORA/HE": start from the original network, select this node and its neighbors, create a subnetwork, and rename it as "ENCHANTRESS"
+* Do the same for a very low popular character like "KANE, SUGAR"
 * Calculate the ratio N/L for all the three above subgraphs
 
-[**REPORT - Q3**] Indicate the number of nodes (N) and edges (L) for all the three above subgraphs (find them in the Network Panel). Calculate the ratio N/L and the value N(N-1) too. 
-
-[**REPORT - Q4**] Is the number of edges proportional to the number of nodes? Is this what you would expect? Can be this explained from the point of view of characters interacting in the same comic?
+[**REPORT - Q3**] Indicate the number of nodes (N) and edges (L) for all the three subgraphs above (find them in the Network Panel). Calculate the ratio N/L and the value N(N-1) too. Is the number of edges proportional to the number of nodes? Is this what you would expect? Can those numbers be explained from the point of view of characters interacting in the same comic?
 
 :warning: **Important**: by default Cytoscape has a [level of detail](http://manual.cytoscape.org/en/stable/Rendering_Engine.html#what-is-level-of-detail-lod) setting that is similar to the one found in videogames. If the current view contains more than *render.nodeLabelThreshold*, the node labels are not displayed. You can toggle between full details and reduced details using "View > Show Graphics Details" and "View > Hide Graphics Details." You can also permanently adjust this by going to "Edit > Preferences". Depending on the computer, you can set this up to 2000 from the default of 200. Be careful: this will block your computer when dealing with large networks such as the hero network.
 
