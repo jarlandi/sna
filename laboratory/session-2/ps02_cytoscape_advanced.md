@@ -52,7 +52,7 @@ To import Marvel Universe SG into Cytoscape:
 
 :warning: **Important**: by default Cytoscape has a [level of detail](http://manual.cytoscape.org/en/stable/Rendering_Engine.html#what-is-level-of-detail-lod) setting that is similar to the one found in videogames. If the current view contains more than *render.nodeLabelThreshold*, the node labels are not displayed. You can toggle between full details and reduced details using "View > Show Graphics Details" and "View > Hide Graphics Details." You can also permanently adjust this by going to "Edit > Preferences". Depending on the computer, you can set this up to 2000 from the default of 200. Be careful: this will block your computer when dealing with large networks such as the hero network.
 
-# 2. Adding attributes to an existing network
+# 3. Adding attributes to an existing network
 
 When working with CSV files, the node attibutes have to be supplied in a separated file from the edges file. Following, we will create a network from two CSV files: `got-characters.csv` contains the name and house of the characters in the series *Game of Thrones* (let's name it, *attribute file*) and `got-relationships.csv` contains relationships between characters (let's name it, *network file*).
 
@@ -93,7 +93,7 @@ Now, style the network:
 
 [**REPORT - Q9**] Indicate a brief commentary on any interesting phenomenon you observe on this graph.
 
-# 3. Creating a network on CSV files
+# 4. Creating a network on CSV files
 
 Now, create a network on your own, on whatever topic of your choice as long as the network is **real**. As indicated above, you will need two CSV files: one for the network and one for the attributes. The network should include between 15 and 30 nodes.
 
