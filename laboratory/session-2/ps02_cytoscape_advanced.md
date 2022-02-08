@@ -46,7 +46,6 @@ To import Marvel Universe SG into Cytoscape:
 * Rename this new network as BLACK PANTHER
 * Do the same for a less popular character ENCHANTRESS/AMORA/HE: start from the original network, select this node and its neighbors, create a subnetwork, and rename it as ENCHANTRESS
 * Do the same for a very low popular character like KANE, SUGAR
-* Calculate the ratio N/L for all the three above subgraphs
 
 [**REPORT - Q3**] Indicate the number of nodes (N) and edges (L) for all the three subgraphs above (find them in the Network Panel). Also, calculate the average degree, L<sub>max</sub>, and L/L<sub>max</sub> ratio. What are your thoughts about these numbers? Is this what you would expect to happen? Can those numbers be explained from the point of view of characters interacting in the same comics? Which concept you studied in the theory classes is it related with?
 
