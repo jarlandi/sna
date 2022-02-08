@@ -106,15 +106,15 @@ These are only ideas. Be creative.
 
 Tip: to include a legend, you can use the Cytoscape app [legend creator](https://apps.cytoscape.org/apps/legendcreator).
 
-[**REPORT - Q10**] Describe the graph you created.
+[**REPORT - Q7**] Describe the graph you created.
 
-[**REPORT - Q11**] Include two tables with the contents of the CSV files you created (not screenshots).
+[**REPORT - Q8**] Include two tables with the contents of the CSV files you created (not screenshots).
 
-[**REPORT - Q12**] Draw the graph in Cytoscape and include it in your report.
+[**REPORT - Q9**] Draw the graph in Cytoscape and include it in your report.
 
 # DELIVER (INDIVIDUALLY)
 
-Deliver a report describing these networks, having at most 4 pages in PDF. The report should have **three numbered sections**: one for the *Marvel* network, one for *Game of Thrones*, and one for the network you created. Remember to include all of the elements marked [**REPORT - Q**] above.
+Deliver a report having at most 4 pages in PDF. The report should have **three numbered sections**: one for the *Marvel* network, one for *Game of Thrones*, and one for the network you created. Remember to include all of the elements marked [**REPORT - Q**] above.
 
 Your report should end with the following text:
 
