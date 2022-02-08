@@ -20,4 +20,6 @@ To update the local version of the repository, from any location within the sna-
 
 (you can see which files have changed)
 
-Other options to downdload files are 1) downloading a zip file including all the repository, and 2) for a single file, show the raw version in your web browser and copy/paste the text. You can find the corresponding buttons in the git web pages. 
+Other options to downdload files are:
+1. Downloading a zip file including all the repository (button "Code" in the root web page).
+2. For a single file, show the raw version in your web browser and copy/paste the text (button "Raw" in the file web page).
