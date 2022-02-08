@@ -18,4 +18,4 @@ Git update (you can see which files have changed). From any location within the 
 
 `git pull`
 
-Other options are 1) downloading a zip file including all the repository, and 2) for a single file, show the raw version in your web browser and copy/paste the text. You can find the corresponding buttons in the git web pages. 
+Other options to downdload files are 1) downloading a zip file including all the repository, and 2) for a single file, show the raw version in your web browser and copy/paste the text. You can find the corresponding buttons in the git web pages. 
