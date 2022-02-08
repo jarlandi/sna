@@ -16,6 +16,8 @@ Downloading the repository:
 
 To update the local version of the repository, from any location within the sna-upv directory:
 
-`git pull` (you can see which files have changed)
+`git pull`
+
+(you can see which files have changed)
 
 Other options to downdload files are 1) downloading a zip file including all the repository, and 2) for a single file, show the raw version in your web browser and copy/paste the text. You can find the corresponding buttons in the git web pages. 
