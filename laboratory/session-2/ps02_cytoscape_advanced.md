@@ -59,10 +59,10 @@ When working with CSV files, the node attibutes have to be supplied in a separat
 First, import the edges:
 
 * ``File > Import > Network from file ...``
-* Use the file ``got-relationships.csv``
-* Select for `src` column: "Source Node" (green disc)
-* Select for `dest` column: "Target Node" (red target)
-* Select "Edge Attribute" for the other columns
+* Use the file ``got-relationships.csv`` (you may want "Create a new network collection")
+* Pick on `src` column and select `Source Node` (green disc)
+* Pick on `dest` column and select `Target Node` (red target)
+* Select `Edge Attribute` for the other columns
 
 As a result, source and target nodes are assigned to the node table. Have a look at both node and edge tables.
 
@@ -71,9 +71,9 @@ Then, import the node attributes to be added:
 * Select the node table; we are going to add new attributes as columns.
 * ``File > Import > Table from file ...``
 * Use the file ``got-characters.csv``
-* Import data "To selected networks only" and select "got-relationships.csv"
-* Import data as "Node Table Columns"
-* The first column ("Id") should be the key
+* Import data `To selected networks only` and select `got-relationships.csv`
+* Import data as `Node Table Columns`
+* The first column (`Id`) should be the key
 * The other columns should be attributes
 
 Check the changes in the node table.
