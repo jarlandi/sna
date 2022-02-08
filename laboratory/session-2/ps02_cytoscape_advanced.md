@@ -35,6 +35,8 @@ To import Marvel Universe SG into Cytoscape:
 
 [**REPORT - Q2**] Answer the following question: what do you think are the small components that are disconnected from the big connected component?
 
+:warning: **Note**: by default Cytoscape has a [level of detail](http://manual.cytoscape.org/en/stable/Rendering_Engine.html#what-is-level-of-detail-lod) setting that is similar to the one found in videogames. If the current view contains more than *render.nodeLabelThreshold*, the node labels are not displayed. You can toggle between full details and reduced details using "View > Show Graphics Details" and "View > Hide Graphics Details." You can also permanently adjust this by going to "Edit > Preferences". Depending on the computer, you can set this up to 2000 from the default of 200. Be careful: this will block your computer when dealing with large networks such as the hero network.
+
 # 2. Creating sub-networks
 
 * Search and select for the node named BLACK PANTHER/T'CHAL
@@ -48,8 +50,6 @@ To import Marvel Universe SG into Cytoscape:
 * Do the same for a very low popular character like KANE, SUGAR
 
 [**REPORT - Q3**] Indicate the number of nodes (N) and edges (L) for all the three subgraphs above (find them in the Network Panel). Also, calculate the average degree, L<sub>max</sub>, and L/L<sub>max</sub> ratio. What are your thoughts about these numbers? Is this what you would expect to happen? Can those numbers be explained from the point of view of characters interacting in the same comics? Which concept you studied in the theory classes is it related with?
-
-:warning: **Important**: by default Cytoscape has a [level of detail](http://manual.cytoscape.org/en/stable/Rendering_Engine.html#what-is-level-of-detail-lod) setting that is similar to the one found in videogames. If the current view contains more than *render.nodeLabelThreshold*, the node labels are not displayed. You can toggle between full details and reduced details using "View > Show Graphics Details" and "View > Hide Graphics Details." You can also permanently adjust this by going to "Edit > Preferences". Depending on the computer, you can set this up to 2000 from the default of 200. Be careful: this will block your computer when dealing with large networks such as the hero network.
 
 # 3. Adding attributes to an existing network
 
