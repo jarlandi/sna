@@ -43,6 +43,9 @@ To import Marvel Universe SG into Cytoscape:
   * Option 1: use the search box located on top of the display
       * :warning: sometimes the search box does not work as expected: **use the pattern "BLACK\ PANTHER/T'CHAL" to obtain the expected results** (blank characters need to be escaped).
   * Option 2: find this node in the node table (you may want to sort the column alphabetically), click on it and use the secondary button to indicate `Select nodes from selected rows`
+  
+  :warning: To check if the node has been selected look in the node table, it just has to appear alone. Take into account that maybe you cannot see it on the graph because it is hidden by other nodes.
+  
 * Select the neighbors of BLACK PANTHER/T'CHAL by clicking on the `two-house icon on the top bar` (edges between neighbors are also selected)
 * Create a subnetwork with the selected nodes: `File > New Network > From selected nodes, all edges`
 * Rename this new network as BLACK PANTHER
