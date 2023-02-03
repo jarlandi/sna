@@ -8,7 +8,7 @@ Handouts must not be delivered. The target of these activities is to complement 
 
 Handouts will be published at the beggining of the course, please have them at hand in the classroom sessions.
 
-Solutions will be published after their respective workshop session. Nevertheless, for an effective learning process, it is recommended you try to solve the proposed exercices before glance at the solutions.
+Solutions will be published after their respective workshop session in Poliformat (and, in a reasonable time, here too). Nevertheless, for an effective learning process, it is recommended you try to solve the proposed exercices before glance at the solutions.
 
 The students can ask for doubts to the professor anytime throughout the week. Solutions can be commented in the next workshop session if needed.
 
