@@ -21,11 +21,11 @@ In the laboratory you can use either a PC from the lab or your own laptop. You n
 
 ## Practice sessions
 
+Handouts are named with the suffic `ps` (prectice session) and they describes the activities the students must perform during the practice session.
+
 The first two sessions we have handout documents dedicated to Cytoscape, a network visualization tool.
 
 The remaining sessions we have Python notebooks. Download the notebooks, open them, and follow the instructions there (some instructions in color are not visible in the GitHub preview).
-
-Each session describes the activities the students must perform during the practice session.
 
 :bulb: **Read the practice descriptions before the session,** as they can be sometimes long. You can begin a practice job before their corresponding session either. This can be helpful because you may have prepared your questions addressed to the professor prior to the session.
 
