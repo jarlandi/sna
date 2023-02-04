@@ -4,7 +4,7 @@ In this repository you will find handouts, datasets, and instructions for the Wo
 
 Please read the README file you will find in the `laboratory` directory with important information. 
 
-You need some files of this repository to work with (e.g., datasets or jupiter files). The recommended way to download these files is to download the whole repository (the disk ocupation is very low) and keep updated your local version. After the initial publication, changes in contents will be minimal but possible.
+You need some files of this repository to work with (e.g., datasets or jupiter files). The recommended way to access these files is to download the whole repository (the disk ocupation is very low) and keep updated your local version. After the initial publication, changes in contents will be minimal but possible.
 
 Git installation:
 
