@@ -6,24 +6,24 @@
 
 You will need:
 
-* [Cytoscape 3.8](https://cytoscape.org/download.html) or higher
+* [Cytoscape 3.9](https://cytoscape.org/download.html) or higher
 * Python 3.8 or higher with the following Python packages installed:
    * [networkx](https://networkx.github.io/)
    * [matplotlib](https://matplotlib.org/)
    * [numpy](https://numpy.org/)
    * Jupyter Notebook ([installation instructions](https://jupyter.org/install.html))
 
-   Or alternatively, you can use the [Anaconda](https://www.anaconda.com/products/individual) Python package manager for data science which includes all the above Python packages.
+   or alternatively, you can use the [Anaconda](https://www.anaconda.com/products/individual) Python package manager for data science which includes all the above Python packages.
 
 ## Hardware availability
 
-In the laboratory you can use either a PC from the lab or your own laptop. As is expected that sometimes you may need to continue your practice work out of the laboratori, you will easily access your personal *W* drive from the lab PC to store your ongoing work.
+In the laboratory you can use either a PC from the lab or your own laptop. As is expected that you may need to continue your practice work out of the laboratory, you may want to use your UPV personal disk space (drive W:) to store your ongoing work to be shared between both computers. You will find W mounted on your home directory.
 
 ## Practice sessions
 
-The first two sessions have handout documents dedicated to Cytoscape, a network visualization tool.
+The first two sessions we have handout documents dedicated to Cytoscape, a network visualization tool.
 
-The remaining sessions have handouts that are Python notebooks. Download the notebooks, open them, and follow the instructions there (some instructions are in color and are not visible in the preview shown on the GitHub website). 
+The remaining sessions we have Python notebooks. Download the notebooks, open them, and follow the instructions there (some instructions in color are not visible in the GitHub preview).
 
 Each session describe the activities that the students must perform during the practice session.
 
@@ -31,14 +31,9 @@ Each session describe the activities that the students must perform during the p
 
 ## Delivery requirements
 
-The contents to be included in the document for delivering are specified in the last section of the handout of every session. Each document must be submitted twice to the Drop box (*Espai compartit*) section of Poliformat site:
+The contents to be included in the document for delivering are specified in the handout last section. Deliveries must be submitted trough *Dropbox* (or *Espai compartit*) section of Poliformat site. Due dates are published in the schedule document of the course. No stuff must be delivered during or at the end of the lab session.
 
-1. Version 0: To be delivered by the end of its corresponding lab session including the activities carried out during the session. This is intended to be a **mid-term submission**: don't worry if you did not finish all the activities.
-2. Version 1: To be delivered the day before the next practice session (deadline 23:55 h). This is the **final submission** of a session: all activities are expected to be complete.
-
-If you do not upload Version 1, the instructor will understant that Version 0 corresponds to the final submission, and the it will be graded under this premise.
-
-Delivered files must be named as: `session-X-v0.EXTENSION` or `session-X-v1.EXTENSION`, accordingly, where `X` must be the session number, and `EXTENSION` can be `pdf`, `ypynb` (jupyter file), or `md` (markup file), depending on the session requirements. Not following this patterns will incur in a significant decrease of the grade.
+Delivered files must be named `session-X.EXTENSION` (where `X` must be the session number, and `EXTENSION` can be `pdf`, `ypynb` (jupyter file), or `md` (markup file), depending on the session requirements. Not following this pattern or delivery deadlines will incur in a significant decrease of the grade.
 
 ## Tutorials/references
 
