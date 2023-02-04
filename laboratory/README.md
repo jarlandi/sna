@@ -17,7 +17,7 @@ You will need:
 
 ## Hardware availability
 
-In the laboratory you can use either a PC from the lab or your own laptop. As is expected that you may need to continue your practice work out of the laboratory, you may want to use your UPV personal disk space (drive W:) to store your ongoing work to be shared between both computers. You will find W mounted on your home directory.
+In the laboratory you can use either a PC from the lab or your own laptop. You need to continue your practice work out of the laboratory, so you may want to use your UPV personal disk space (drive W) to store your ongoing work to be shared between both computers. You will find W mounted on your home directory.
 
 ## Practice sessions
 
@@ -25,9 +25,9 @@ The first two sessions we have handout documents dedicated to Cytoscape, a netwo
 
 The remaining sessions we have Python notebooks. Download the notebooks, open them, and follow the instructions there (some instructions in color are not visible in the GitHub preview).
 
-Each session describe the activities that the students must perform during the practice session.
+Each session describes the activities the students must perform during the practice session.
 
-:bulb: **Read the practice descriptions before the session,** as they can be sometimes long.
+:bulb: **Read the practice descriptions before the session,** as they can be sometimes long. You can begin a practice job before their corresponding session. This can be helpful because you may have prepared your questions for the professor prior to the session.
 
 ## Delivery requirements
 
