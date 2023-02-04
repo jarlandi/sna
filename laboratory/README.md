@@ -27,13 +27,13 @@ The remaining sessions we have Python notebooks. Download the notebooks, open th
 
 Each session describes the activities the students must perform during the practice session.
 
-:bulb: **Read the practice descriptions before the session,** as they can be sometimes long. You can begin a practice job before their corresponding session. This can be helpful because you may have prepared your questions for the professor prior to the session.
+:bulb: **Read the practice descriptions before the session,** as they can be sometimes long. You can begin a practice job before their corresponding session either. This can be helpful because you may have prepared your questions addressed to the professor prior to the session.
 
 ## Delivery requirements
 
-The contents to be included in the document for delivering are specified in the handout last section. Deliveries must be submitted trough *Dropbox* (or *Espai compartit*) section of Poliformat site. Due dates are published in the schedule document of the course. No stuff must be delivered during or at the end of the lab session.
+The contents to be included in the document for delivering are specified in the handout last section. Deliveries must be submitted trough *Dropbox* (or *Espai compartit*) section of Poliformat site. Due dates are published in the course schedule  (Poliformat - Resources). No stuff must be delivered during or at the end of the lab session.
 
-Delivered files must be named `session-X.EXTENSION` (where `X` must be the session number, and `EXTENSION` can be `pdf`, `ypynb` (jupyter file), or `md` (markup file), depending on the session requirements. Not following this pattern or delivery deadlines will incur in a significant decrease of the grade.
+Delivered files must be named `session-X.EXTENSION` (where `X` must be the session number, and `EXTENSION` can be `pdf`, `ypynb` (jupyter file), or `md` (markup file), depending on the session requirements. Not following this pattern, or delivery deadlines, will incur in a significant decrease of the grade.
 
 ## Tutorials/references
 
