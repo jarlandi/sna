@@ -39,7 +39,7 @@ If asked, select *shared name* for the node identifier column. This will transfo
 
 * Style
 
-    Detailed styles for the information to be displayed can be applied to nodes, edges, entire networks, and tables by selecting the corresponding tab at the bottom of the panel (see section Styles).
+    Detailed styles for the information to be displayed. It can be applied to nodes, edges, entire networks, and tables by selecting the corresponding tab at the bottom of the panel (see section Styles).
 
 * Filter
 
@@ -73,7 +73,7 @@ You can move (click and drag) and zoom (scroll) the view. Nodes and edges can be
 
     [Wikipedia](https://en.wikipedia.org/wiki/Force-directed_graph_drawing)
 
-Layout calculation may take several minutes for large networks.
+:warning: Layout calculation may take several minutes for large networks.
 
 # 5. Styles
 
