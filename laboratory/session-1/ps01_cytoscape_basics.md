@@ -20,13 +20,13 @@
 
 You can look up the user manual at https://manual.cytoscape.org/en/stable.
 
-First time you put your hands on cytoscape? This document can help [cytoscape_fast_guide](https://github.com/jarlandi/sna-upv/blob/main/laboratory/session-1/cytoscape_fast_guide.md).
+First time you put your hands on cytoscape? This document can help [Cytoscape_fast_guide](https://github.com/jarlandi/sna-upv/blob/main/laboratory/session-1/cytoscape_fast_guide.md).
 
 :warning: It is recomended to save your work in a session file (*.cys).
 
 # 1. Importing a network
 
-Well, before importing, have a fast look at the dataset file contents (just clik on the links above to open in the web browser). You will find three different data formats.
+Before importing, wi will have a fast look at the dataset file contents (just clik on the links above to open in the web browser). You will find three different data formats.
 
 ### Import Zachary's karate club network
 
