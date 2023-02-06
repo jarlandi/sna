@@ -20,7 +20,7 @@
 
 You can look up the user manual at https://manual.cytoscape.org/en/stable.
 
-First time you put your hands on cytoscape? This document can help [cytoscape_fast_guide] (https://github.com/jarlandi/sna-upv/blob/main/laboratory/session-1/cytoscape_fast_guide.md).
+First time you put your hands on cytoscape? This document can help [cytoscape_fast_guide](https://github.com/jarlandi/sna-upv/blob/main/laboratory/session-1/cytoscape_fast_guide.md).
 
 :warning: It is recomended to save your work in a session file (*.cys).
 
