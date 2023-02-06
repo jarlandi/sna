@@ -57,7 +57,7 @@ You can select among Node, Edge, and Network tables to show columns of selected 
 
 Displays the network graph. At the bottom there are a set of tools. 
 
-You can move (click and drag) and zoom (scroll) the view. Nodes and edges can be selected/deselected by [CTRL+] clicking. Use the search box on the top right panel to select nodes and edges by name. 
+You can move (click and drag) and zoom (scroll) the view. Nodes and edges can be selected/deselected by [CTRL+] clicking. Use the search box on the top right panel to select nodes and edges by name. Node identifiers cannot be shown when the zoom is far away enough.
 
 # 4. Layouts
 
@@ -109,6 +109,7 @@ Choose one of the following options to install an APP (plug-in):
 1. Select ``Apps > App Manager``, search for the plug-in name, select, and press ``Install``.
 1. Download a jar file from [Cytoscap store](https://apps.cytoscape.org/apps) and then select ``Apps > App Manager`` and ``Install from file ...``.
 
+Cytoscape updating does not perform app updates. You can chech for app uptades from the ``Apps > App Manager``.
 ---------------------------------------------------------------------------------
 
 
