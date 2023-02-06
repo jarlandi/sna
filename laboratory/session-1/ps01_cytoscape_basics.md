@@ -38,10 +38,10 @@ It will be treated as an undirected newtwork.
 * Select `karate.gml`
 * `Layout > Compound Spring Embedder`
 * Look at the graph and try to figure out if there is anything special about nodes 1 and 34 (you can pick and drag nodes to get a better view).
-* [**REPORT**] Include in your report this graph plus and a brief paragraph indicating whether nodes 1 and 34 have visually anything special.
+* [**REPORT**] Include this graph in your report plus a brief paragraph indicating whether nodes 1 and 34 have visually anything special.
 * [**REPORT**] The Compound Spring Embedder is an algorithm derived from force-directed graph layout algorithms. Read the Wikipedia page on [force-directed graph drawing](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) and explain in one paragraph, in your own words, how this works.
 
-:warning: Do not use screenshots to catch images for the report; use `File > Export as image` (only the visible area of the graph is exported).
+:warning: Do not use screenshots to catch images for the report; use `File > Export as image` instead (only the visible area of the graph is exported).
 
 :warning: Be brief in all your commentars.
 
@@ -58,27 +58,27 @@ It will be treated as an undirected newtwork.
 * Find nodes with degree larger than *D=30*. Use the `Filter Panel` (in `Control Panel`). Apply and check the effect of the `select/show` selection (at bottom) on the graph view.
 * Create an annotation indicating a character having a degree larger than *D*: on the graph, right click on blank space -> add text; modify the text in `Annotation Panel` (in `Control Panel`); then right click on the text -> add arrow.
 * [**REPORT**] Include this graph in your report. 
-* [**REPORT**] Include a list of the characters represented by nodes with degree larger than *D* (shared name, name, and number of scenes) and brief commentary of what kind of characters they are.
+* [**REPORT**] Include a list of the characters represented by nodes with degree larger than *D* (shared name, name, and number of scenes) and a brief commentary of what kind of characters they are.
 
 ### Import US companies ownership network
 
-Network representing company co-ownership in the US.
+This network represents	 company co-ownership in the US.
 
 It can be treated either as a directed or undirected newtwork.
 
 * `File > Import > Network from File ...`
 * Select `us_companies_ownership.csv`
 * Click `OK` and accept default import (it should take less than a minute)
-* [**REPORT**] Do you see more than one connected component? What do connected components represent in this graph?
+* [**REPORT**] Do you see more than one connected component (groups of interconnected nodes)? What do connected components represent in this graph?
 * [**REPORT**] Include a brief commentary on large-degree nodes in this graph, which are they or where are they located in the graph? What do those nodes represent?
 * `Layout > Edge Weighted Spring Embedder` :warning: This might take up to 20 minutes in a 8-core CPU, so better if you do this out of the laboratory hours (Cancel button works well)
-* [**REPORT**] Include this graph in your report.
+* [**REPORT**] Include the resulting graph in your report.
 
 # 2. Editing node and edge styles
 
 In `Control Panel`, <ins>select Karate Club network</ins>, then, select Style tab and play with the Style Panel. Here are some ideas.
 
-*Note: Changing style properties of a given style (e.g., default) applies (if supported) to all the networks using such style in the current session.*
+:eyes: Changing style properties of a given style (e.g., default) applies (if supported) to all the networks using such style in the current session.*
 
 ### Change the style of the entire network
 
