@@ -34,9 +34,9 @@ Let's start with a simple case: [Zachary's Karate Club](https://en.wikipedia.org
 
 It will be treated as an undirected newtwork.
 
-* `File > Import > Network from File ...`
-* Select `karate.gml`
-* `Layout > Compound Spring Embedder`
+* `File > Import > Network from File ...`.
+* Select `karate.gml`.
+* `Layout > Compound Spring Embedder`.
 * Look at the graph and try to figure out if there is anything special about nodes 1 and 34 (you can pick and drag nodes to get a better view).
 * [**REPORT**] Include this graph in your report plus a brief paragraph indicating whether nodes 1 and 34 have visually anything special.
 * [**REPORT**] The Compound Spring Embedder is an algorithm derived from force-directed graph layout algorithms. Read the Wikipedia page on [force-directed graph drawing](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) and explain in one paragraph, in your own words, how this works.
@@ -51,8 +51,8 @@ This is a compilation of characters that appear in a Star Wars movie. The *scene
 
 It will be treated as an undirected newtwork.
 
-* `File > Import > Network from File ...`
-* Select `starwars.graphml`
+* `File > Import > Network from File ...`.
+* Select `starwars.graphml`.
 * If asked, select *shared name* for the node identifier column. This will transform node identifiers into a column named "shared name" internally.
 * `Layout > Prefuse Force Directed Layout > All nodes > scenes`. The view should have been slightly improved.
 * Find nodes with degree larger than *D=30*. Use the `Filter Panel` (in `Control Panel`). Apply and check the effect of the `select/show` selection (at bottom) on the graph view.
@@ -66,12 +66,12 @@ This network represents	 company co-ownership in the US.
 
 It can be treated either as a directed or undirected newtwork.
 
-* `File > Import > Network from File ...`
-* Select `us_companies_ownership.csv`
-* Click `OK` and accept default import (it should take less than a minute)
+* `File > Import > Network from File ...`.
+* Select `us_companies_ownership.csv`.
+* Click `OK` and accept default import (it should take less than a minute).
 * [**REPORT**] Do you see more than one connected component (groups of interconnected nodes)? What do connected components represent in this graph?
 * [**REPORT**] Include a brief commentary on large-degree nodes in this graph, which are they or where are they located in the graph? What do those nodes represent?
-* `Layout > Edge Weighted Spring Embedder` :warning: This might take up to 20 minutes in a 8-core CPU, so better if you do this out of the laboratory hours (Cancel button works well)
+* `Layout > Edge Weighted Spring Embedder` :warning: This might take up to 20 minutes in a 8-core CPU, so better if you do this out of the laboratory hours (Cancel button works well).
 * [**REPORT**] Include the resulting graph in your report.
 
 # 2. Editing node and edge styles
@@ -88,32 +88,32 @@ In `Control Panel`, <ins>select Karate Club network</ins>, then, select Style ta
 
 ### Name nodes
 
-* Select `Node tab` (at the bottom)
-* Deploy "Label" property, create a "Discrete mapping", and choose a couple of nodes to write a name for them in its attribute "name"
-* You can keep the new names or remove the mapping (trash can icon)
+* Select `Node tab` (at the bottom).
+* Deploy "Label" property, create a "Discrete mapping", and choose a couple of nodes to write a name for them in its attribute "name".
+* You can keep the new names or remove the mapping (trash can icon).
 
 ### Change the shape of the nodes
 
-* Click on the column "Def." (to the left) of the "Shape" property and choose a new shape
+* Click on the column "Def." (on the left) of the "Shape" property and choose a new shape.
 
 ### Change the edge width (edge width mapping)
 
 <ins>Select Star Wars network</ins> in `Control Panel` `Network tab`.
 
-* Select the node with name "DART VADER" and move it out of the nodes cloud. If you need some help reed Section "3. User interface and basic information" of the document "cytoscape_fast_guide.md".
-* Select `Style tab` and `Edge tab` (at the bottom)
-* Deploy "Width" property (or press "Map." button)
+* Select the node with name "DART VADER" and move it out of the nodes cloud. If you need some help read Section "3. User interface and basic information" of the document "cytoscape_fast_guide.md".
+* Select `Style tab` and `Edge tab` (on the bottom).
+* Deploy "Width" property (or press "Map." button).
 * Assign Column = scenes (number of scenes in common). More scenes should mean thicker edges.
 * Change Mapping Type = Continuous Mapping (if already assigned, reassign). Use column "Scene" to map.
-* Click and edit the "Current Mapping" function and broad the range of edge width values to get a clearer visual separation between thin and thick edges
+* Click and edit the "Current Mapping" function and broad the range of edge width values to get a clearer visual separation between thin and thick edges.
 
 ### Change the entire layout
 
 Try some layouts in the Layout menu. For example:
 
-* `Degree Sorted Circle Layout > All nodes`
-* `Edge Weighted Spring Embedded Layout`. Try this with the Karate club, look for nodes 1 and 34.
-* `Prefuse Force Directed Layout`
+* `Degree Sorted Circle Layout > All nodes`.
+* `Edge Weighted Spring Embedded Layout`. Try this with the Karate club and look for nodes 1 and 34.
+* `Prefuse Force Directed Layout`.
 
 # 3. Performing basic network analysis
 
@@ -124,16 +124,16 @@ Perform network analysis as follows.
 <ins>Select Karate club network</ins>.
 
 * Select ``Tools > Analyze network`` (consider the network is not directed). The analysis adds some attributes: network attributes (right), node and edge attributes (Table View).
-* Look at the node attributes
-* [**REPORT**] Indicate which are the two nodes with largest betweenness centrality
+* Look at the node attributes.
+* [**REPORT**] Indicate which are the two nodes with largest betweenness centrality.
 * Change the fill color of nodes to be a *continuous mapping* of the column *Betweenness Centrality*; choose the colors so that higher betweenness centrality is associated with a darker color.
-* [**REPORT**] Include this graph in your report
+* [**REPORT**] Include this graph in your report.
 
 ### Plot distributions
 
-* Try hiding and showing the analysis results panel from ``View > Show results panel``
-* [**REPORT**] Include two plots with degree distributions from <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution")
-* [**REPORT**] Include two plots with the distribution of the average shortest path lengths in <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution")
+* Try hiding and showing the analysis results panel from ``View > Show results panel``.
+* [**REPORT**] Include two plots with degree distributions from <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution").
+* [**REPORT**] Include two plots with the distribution of the average shortest path lengths in <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution").
 
 Notice that the explanatory variables (attributes) available to plot vary depending on if the node, edge or network table is selected in Table View.
 
@@ -141,8 +141,8 @@ Notice that the explanatory variables (attributes) available to plot vary depend
 
 <ins>Select Star Wars network</ins>.
 
-* Make the size of the node larger either for nodes with high degree or nodes with high betweenness
-* [**REPORT**] Include an image of the graph styled as indicated above
+* Make the size of the node larger either for nodes with high degree or nodes with high betweenness.
+* [**REPORT**] Include an image of the graph styled as indicated above.
 
 # 4. Using a Cytoscape App (ClusterMaker2)
 
@@ -156,8 +156,8 @@ Install [ClusterMaker2 release](https://apps.cytoscape.org/apps/clustermaker2). 
 
 <ins>Select Star Wars network</ins>.
 
-* In the Apps menu, look for and select the [Affinity Propagation cluster](https://en.wikipedia.org/wiki/Affinity_propagation) clustering algorithm in ClusterMaker (select any temporary folder if prompted)
-* ClusterMaker2 requires an attribute for the weight: use ``Array source = scenes``
+* In the Apps menu, look for and select the [Affinity Propagation cluster](https://en.wikipedia.org/wiki/Affinity_propagation) clustering algorithm in ClusterMaker (select any temporary folder if prompted).
+* ClusterMaker2 requires an attribute for the weight: use ``Array source = scenes``.
 * Run it; then, check that a new attribute in the node table named ``_APCluster`` has been added. Move this column by the scenes column and order their values: you will find that several groups of nodes have been formed.
 * Use the new attribute in the nodes for "Fill color" using a "Discrete mapping" on ``_APCluster.`` You might have to pick the color for each group; just pick a color for the three largest groups.
 * [**REPORT**] Include in your report an image of the graph with the three largest clusters in three different colors.
@@ -171,7 +171,7 @@ Install [ClusterMaker2 release](https://apps.cytoscape.org/apps/clustermaker2). 
 * Use "Edge betweenness" as the attribute for the weight (``Array source``). You must have run the network analyzer first so you can have "Edge betweenness" as an attribute in edges.
 * Run the module; then, you should get two groups led by #1 and #34. Are they close to the actual way in which this club splitted?
 * [**REPORT**] Include in your report an image of the graph with nodes painted according to clusters.
-* [**REPORT**] Include a brief commentary on what do you see in these clusters, and whether they have some relationship with the way in which the Karate Club actually splitted
+* [**REPORT**] Include a brief commentary on what do you see in these clusters, and whether they have some relationship with the way in which the Karate Club actually splitted.
 
 # DELIVER (INDIVIDUALLY)
 
