@@ -26,7 +26,7 @@ First time you put your hands on cytoscape? This document can help [Cytoscape_fa
 
 # 1. Importing a network
 
-Before importing, wi will have a fast look at the dataset file contents (just clik on the links above to open in the web browser). You will find three different data formats.
+Before importing, we will have a fast look at the dataset file contents (just clik on the links above to open in the web browser). You will find three different data formats.
 
 ### Import Zachary's karate club network
 
