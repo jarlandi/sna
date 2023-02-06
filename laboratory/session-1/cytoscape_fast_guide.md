@@ -90,7 +90,7 @@ You can move (click and drag) and zoom (scroll) the view. Nodes and edges can be
 
 * `Select Filter tab in the Control Panel` to access Filter Panel
 * Modify default filter or add a new filter
-* `Select Column, Degree, or Topology filter and apply`. Examine changes in the Table Panel and Network View
+* `Select Column, Degree, or Topology filter and apply`. Examine changes in Table Panel and Network View
 * Try "Select" and "Show" visualization modes (at bottom)
 
 *Note: Changing style properties of a given style (e.g., default) applies (if supported) to all the networks using such style in the current session.*
@@ -103,9 +103,9 @@ You can move (click and drag) and zoom (scroll) the view. Nodes and edges can be
 
 # 8. Apps installation
 
-Choose one of the following options to install an APP:
+Choose one of the following options to install an APP (plug-in):
 
-1. Install from [Cytoscap store](https://apps.cytoscape.org/apps) (keep Cytoscape application open)
+1. Install from [Cytoscap store](https://apps.cytoscape.org/apps) (keep Cytoscape application open in the meanwhile)
 1. Select ``Apps > App Manager``, search for the plug-in name, select, and press ``Install``.
 1. Download a jar file from [Cytoscap store](https://apps.cytoscape.org/apps) and then select ``Apps > App Manager`` and ``Install from file ...``.
 
