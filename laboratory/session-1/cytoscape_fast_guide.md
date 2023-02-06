@@ -109,7 +109,7 @@ Choose one of the following options to install an APP (plug-in):
 1. Select ``Apps > App Manager``, search for the plug-in name, select, and press ``Install``.
 1. Download a jar file from [Cytoscap store](https://apps.cytoscape.org/apps) and then select ``Apps > App Manager`` and ``Install from file ...``.
 
-Cytoscape updating does not perform app updates. You can chech for app uptades from the ``Apps > App Manager``.
+Cytoscape updating does not perform app updates. You can chech for app uptades from ``Apps > App Manager``.
 
 ---------------------------------------------------------------------------------
 
