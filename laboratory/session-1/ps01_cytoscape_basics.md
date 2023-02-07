@@ -43,7 +43,7 @@ It will be treated as an undirected newtwork.
 
 :warning: Do not use screenshots to catch images for the report; use `File > Export as image` instead (only the visible area of the graph is exported).
 
-:warning: Be brief in all your commentars.
+:warning: Be brief in all your commentaries.
 
 ### Import the Star Wars characters network
 
@@ -62,7 +62,7 @@ It will be treated as an undirected newtwork.
 
 ### Import US companies ownership network
 
-This network represents	 company co-ownership in the US.
+This network represents company co-ownership in the US.
 
 It can be treated either as a directed or undirected newtwork.
 
