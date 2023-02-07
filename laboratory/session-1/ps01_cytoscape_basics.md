@@ -132,8 +132,7 @@ Perform network analysis as follows.
 ### Plot distributions
 
 * Try hiding and showing the analysis results panel from ``View > Show results panel``.
-* [**REPORT**] Include two plots with degree distributions from <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution")
-warning: because you are dealing with node analysis you must previously select the Node Table View in the bottom right window.
+* [**REPORT**] Include two plots with degree distributions from <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution") :warning: because you are dealing with node analysis you must previously select the Node Table View in the bottom right window.
 * [**REPORT**] Include two plots with the distribution of the average shortest path lengths in <ins>Karate Club</ins> and <ins>Star Wars networks</ins> (button "Node Degree Distribution").
 
 Notice that the explanatory variables (attributes) available to plot vary depending on if the node, edge or network table is selected in Table View.
