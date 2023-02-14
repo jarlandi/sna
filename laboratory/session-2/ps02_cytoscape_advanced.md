@@ -14,7 +14,7 @@
 
 # 1. Working with a large network
 
-The Marvel Universe Social Graph contains characters from the Marvel Universe that appear in the same comic number. It contains over half a million edges. It is formatted in the following way (<tab> as a separator):
+The Marvel Universe Social Graph contains characters from the Marvel Universe that appear in the same comic number. It contains over half a million edges. It is formatted in the following way (TAB as a separator):
 
     BLACK PANTHER/T'CHAL<tab>HAWK
     BLACK PANTHER/T'CHAL<tab>LOKI [ASGARDIAN]
